@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DEBE40FE-7181-092B-9D97-C2EE3216CC36" name="PROGAUTHORITY">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:05:05 UTC</createdTime>
+<commentInRDBMS>Table which houses the name of the authority of the program, the person in charge of the program.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_61</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROG_AUTH_ID" id="D2375834-EB89-1414-E1AC-F21A115BBB9D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:05:56 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROG_AUTH_LAST_NAME" id="DCCFFA9E-BF91-972E-5286-A518B427D69A">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:06:44 UTC</createdTime>
+<commentInRDBMS>Last name of the program authority.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROG_AUTH_FIRST_NAME" id="1E38FEF0-6028-A09E-9D0B-6CD9CDFF1D9F">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:07:10 UTC</createdTime>
+<commentInRDBMS>First name of the program authority.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="B8CC15D3-3EED-A96E-203D-42BBE319AD50">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 15:21:41 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="3182D247-8ACD-9477-43C7-09AF30873E4C">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:43:14 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09BCBC69-6FA9-BBBA-A562-6978A1503C54" name="PROGAUTHORITY_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:07:44 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2375834-EB89-1414-E1AC-F21A115BBB9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EB6848F-0F51-9687-5CBF-DC9EF8F0447E" name="PROGAUTHORITY__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:47:10 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCCFFA9E-BF91-972E-5286-A518B427D69A"/>
+<colUsage columnID="1E38FEF0-6028-A09E-9D0B-6CD9CDFF1D9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2105EB4E-AD9E-B2D4-5E92-475A05E73D1D" name="PROGAUTHORITY__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 15:38:19 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCCFFA9E-BF91-972E-5286-A518B427D69A"/>
+<colUsage columnID="1E38FEF0-6028-A09E-9D0B-6CD9CDFF1D9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

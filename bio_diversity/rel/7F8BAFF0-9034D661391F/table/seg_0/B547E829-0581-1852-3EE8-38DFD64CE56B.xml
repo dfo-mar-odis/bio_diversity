@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B547E829-0581-1852-3EE8-38DFD64CE56B" name="TROUGH">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-29 19:31:17 UTC</createdTime>
+<commentInRDBMS>Table that uniquely identifies the troughs in use in the facilities.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_65</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TROUGH_ID" id="9F78192C-7198-A6FE-0DDF-0598D81F8608">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-29 19:31:53 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TROUGH_SHORT" id="60F1465E-0CBB-E268-9856-070AE6F2357A">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 12:01:15 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TROUGH_DESC" id="4E4A303E-076B-6987-D880-F9398BD1B54C">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 12:01:43 UTC</createdTime>
+<commentInRDBMS>Longer description of the container.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="00D0F046-011D-F8C7-A874-D5A059D15205">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:34:59 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="38A9BE6B-065E-977B-D812-722E806F8B49">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:15:21 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F3C8E0E-4172-E4F0-D218-FFC1596DBF12" name="TROUGH_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-29 19:31:53 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F78192C-7198-A6FE-0DDF-0598D81F8608"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8ED63C82-334D-77CE-B91E-B329D52D81CC" name="TROUGH__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 19:49:05 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60F1465E-0CBB-E268-9856-070AE6F2357A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C0BBBDF-CC14-7601-877A-913C0AF4BABE" name="TROUGH__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:38:14 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60F1465E-0CBB-E268-9856-070AE6F2357A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="8767A413-535C-F4B2-8D41-8F4765FED63A" containerWithKeyObject="777CC0C0-7E3D-0F6B-E188-36ABE4A5C783" localFKIndex="18108ACF-50BE-EFC8-D0B9-E03DFB327749" name="TANKDET_CONTAINERDETCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 18:34:03 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>CONTAINERDETCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DC2141A6-B0D5-8448-87BA-C6B3BECA0467</referredTableID>
+<keyObject>F4D7BA0E-B984-E4CB-E688-4BB166F1E7B8</keyObject>
+<referredKeyID>F4D7BA0E-B984-E4CB-E688-4BB166F1E7B8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CONT_DET_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

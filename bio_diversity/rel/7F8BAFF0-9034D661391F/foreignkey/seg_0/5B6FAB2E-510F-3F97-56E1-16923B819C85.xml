@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5B6FAB2E-510F-3F97-56E1-16923B819C85" containerWithKeyObject="520FD2F2-20BC-8627-9C9B-A8750109EF42" localFKIndex="D7A01464-5D35-009B-5B14-085164F9A5C4" name="CONTAINERXREF_TROUGH_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-05 14:29:08 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>TROUGH</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B547E829-0581-1852-3EE8-38DFD64CE56B</referredTableID>
+<keyObject>9F3C8E0E-4172-E4F0-D218-FFC1596DBF12</keyObject>
+<referredKeyID>9F3C8E0E-4172-E4F0-D218-FFC1596DBF12</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>TROUGH_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

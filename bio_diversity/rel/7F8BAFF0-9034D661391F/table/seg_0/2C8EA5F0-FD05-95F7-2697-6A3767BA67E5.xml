@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C8EA5F0-FD05-95F7-2697-6A3767BA67E5" name="RIVERCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:17:15 UTC</createdTime>
+<commentInRDBMS>Table which houses the description of the river system.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RIVER_ID" id="8BB0A7B9-9AF8-0F21-94D5-10FBD635D508">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:18:25 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RIVER_SHORT" id="3024BC09-190B-728C-D008-81EC1075F36A">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 13:31:32 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RIVER_DESC" id="6F199CDE-D853-9E0B-9B07-7C9C5A89E7FB">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 13:32:29 UTC</createdTime>
+<commentInRDBMS>Long description of the river.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="B248AB4E-9B49-1138-4D97-147881548C22">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:51:55 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="4F17CCE9-2AAE-9826-994F-D5202B306FCD">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:01:34 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D453E4C6-E711-4E03-FC85-8C1416311351" name="RIVERCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:18:25 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BB0A7B9-9AF8-0F21-94D5-10FBD635D508"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEF1380E-155E-4A24-4904-E4A7B697B586" name="RIVERCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:46:07 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3024BC09-190B-728C-D008-81EC1075F36A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CF881BC-3E83-19DE-19C8-338590218354" name="RIVERCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 16:57:14 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3024BC09-190B-728C-D008-81EC1075F36A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

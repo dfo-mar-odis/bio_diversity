@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="01F033E1-5B05-9356-761E-8DDABB5576CD" name="PAIRING">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:00:21 UTC</createdTime>
+<commentInRDBMS>Table that houses information on possible pairings for spawnings.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_39</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAIR_ID" id="8FF15618-3088-8594-48D2-45D21C31FFAA">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:00:55 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIR_START" id="1C50D609-D41C-1ED5-8496-E496F1B64469">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:49:54 UTC</createdTime>
+<commentInRDBMS>The date which the planned pairing was created.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIR_END" id="68525F54-5059-242C-A010-2CF4B3441D31">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:50:09 UTC</createdTime>
+<commentInRDBMS>The date at which the planned pairing became no longer a valid one.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAM" id="A9FBCD1B-154F-C2FC-F51C-4DCB728A6589">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:02:05 UTC</createdTime>
+<commentInRDBMS>Dam of the pair, links to the Unique Fish ID, UFID field in Individuals table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE3492CE-9646-6C5C-84B9-2CD3E7BA130D" referredColumn="517740E9-305C-BE9C-5F08-130FAFD3FB84"/>
+</associations>
+</Column>
+<Column name="STILL_VALID" id="D1A80C08-BA74-FA8D-7255-C64B6A80586E">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:49:04 UTC</createdTime>
+<commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="6A57E52F-AABC-D7B7-DA57-EBCE4E22EDAB">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:40:05 UTC</createdTime>
+<commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="9F459500-625C-CCCC-0102-DFF37FAEAA01">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:49:40 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="09EDECB4-EAC0-FE99-7EF8-68C6B94225B7">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:47:18 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2470A563-429B-A151-E4A2-BADD4479866C" name="PAIRING_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:01:30 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FF15618-3088-8594-48D2-45D21C31FFAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BC0F096-2ACA-EF9D-654B-5DA9C6A8842F" name="PAIRING__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 14:26:53 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9FBCD1B-154F-C2FC-F51C-4DCB728A6589"/>
+<colUsage columnID="1C50D609-D41C-1ED5-8496-E496F1B64469"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8D6D31F-F76B-1427-2EB3-0B461AE59A4E" name="PAIRING__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:00:44 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9FBCD1B-154F-C2FC-F51C-4DCB728A6589"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C7D4732-6724-7636-CD36-9A34961DCA7E" name="PAIRING__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:00:48 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1A80C08-BA74-FA8D-7255-C64B6A80586E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65C76E1C-B6B5-D06B-33B7-B65646835D0C" name="PAIRING_INDIVIDUAL_DAM_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 17:32:40 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9FBCD1B-154F-C2FC-F51C-4DCB728A6589"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

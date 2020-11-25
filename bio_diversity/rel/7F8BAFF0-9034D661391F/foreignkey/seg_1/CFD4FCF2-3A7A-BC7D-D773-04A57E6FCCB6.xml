@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="CFD4FCF2-3A7A-BC7D-D773-04A57E6FCCB6" containerWithKeyObject="777CC0C0-7E3D-0F6B-E188-36ABE4A5C783" localFKIndex="8745AAFD-4681-AD04-0E3D-E2C8E917FF67" name="TANKDET_TANK_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 18:30:32 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>TANK</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>745B2D8C-4A3E-9B6D-9B29-2566A29A5384</referredTableID>
+<keyObject>E028E4DD-FDF1-5617-F683-4C9B110F8062</keyObject>
+<referredKeyID>E028E4DD-FDF1-5617-F683-4C9B110F8062</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TANK_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

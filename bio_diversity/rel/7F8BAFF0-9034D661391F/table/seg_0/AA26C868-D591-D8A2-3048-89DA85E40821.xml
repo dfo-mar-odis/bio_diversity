@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AA26C868-D591-D8A2-3048-89DA85E40821" name="ENVTREATMENTCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:14:04 UTC</createdTime>
+<commentInRDBMS>Table that houses the information for treatments which may be used in the various containers of a facility.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_55</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENV_TREAT_ID" id="CC8F9CE1-1A4B-AFC3-2CF8-62B3947FC5DA">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:15:43 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENV_TREAT_SHORT" id="18C8B680-2943-4E25-6F15-0F0CA425A471">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:15:43 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENV_TREAT_DESC" id="8AE2BCB6-8E67-0AA1-DA8C-F2E1DD6ACF4F">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:15:43 UTC</createdTime>
+<commentInRDBMS>Long description of the environmental treatment type.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENV_REC_DOSAGE" id="3DFC0116-A431-5750-6A73-514955E0EC5D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:16:37 UTC</createdTime>
+<commentInRDBMS>Amount of the product prescribed by the manufacturer.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANUFACTURER" id="EB532094-4D20-D2BE-D249-A7DFDE1768AA">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:17:30 UTC</createdTime>
+<commentInRDBMS>The manufacturer of the product.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="2D32AB27-4F1B-E105-E67C-30F3A8539629">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:32:56 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="A9195A3B-E3A6-249F-BD3A-6CFDE6B5ED9C">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:12:04 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3F0ACA5-EE8A-F61E-8B27-E525325DACAB" name="ENVTREATMENTCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:15:43 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC8F9CE1-1A4B-AFC3-2CF8-62B3947FC5DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD861839-E401-2245-24A9-DD63B02891EE" name="ENVTREATMENTCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 14:11:20 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18C8B680-2943-4E25-6F15-0F0CA425A471"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5773D229-45A9-B0F8-FC26-3884ADC02BCC" name="ENVTREATMENTCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:26:57 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18C8B680-2943-4E25-6F15-0F0CA425A471"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="944C9D23-DFB2-69EB-F7ED-7D15C3250C16" name="ENVTREATMENTCODE__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:27:03 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB532094-4D20-D2BE-D249-A7DFDE1768AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

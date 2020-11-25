@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="27957BB9-1C84-6F12-A186-F79FD05475B1" containerWithKeyObject="3B9F19D9-95A5-DD34-DDDE-D767B640F94E" localFKIndex="3660A04D-4156-F273-C7FC-D9EBA655E80F" name="PROTOCOL_PROTOCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 14:08:00 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>PROTOCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6D96FF18-7876-B75F-8C9F-5A36E9EA05DC</referredTableID>
+<keyObject>72A53285-5672-16BA-E73D-68744E9BC571</keyObject>
+<referredKeyID>72A53285-5672-16BA-E73D-68744E9BC571</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PROTO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

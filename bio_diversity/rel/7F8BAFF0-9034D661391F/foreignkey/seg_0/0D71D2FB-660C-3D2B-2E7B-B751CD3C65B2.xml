@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0D71D2FB-660C-3D2B-2E7B-B751CD3C65B2" containerWithKeyObject="D6A4DA09-8185-B3A0-F8D0-5C54FBE97FA5" localFKIndex="DB6DE2F1-96DA-B299-EB07-12E891D4862C" name="INDIVIDUALDET_QUALCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 19:20:11 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>QUALCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EB6FD639-E689-FE09-0DE8-6DAD5FD2BF89</referredTableID>
+<keyObject>7E09C3E0-B8A3-D661-CECD-D86383671AEA</keyObject>
+<referredKeyID>7E09C3E0-B8A3-D661-CECD-D86383671AEA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>QUAL_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

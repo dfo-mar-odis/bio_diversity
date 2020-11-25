@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="8DD1CAEE-8A0E-CA9E-714A-7E660072642B" containerWithKeyObject="0EAF22DD-5D96-3725-4F33-925BD27ACFD9" localFKIndex="CC782AD9-8640-E7DD-CD06-7F01D93A2348" name="SIRE_PAIRING_FK">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-09-07 14:13:38 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>PAIRING</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>01F033E1-5B05-9356-761E-8DDABB5576CD</referredTableID>
+<keyObject>2470A563-429B-A151-E4A2-BADD4479866C</keyObject>
+<referredKeyID>2470A563-429B-A151-E4A2-BADD4479866C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PAIR_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

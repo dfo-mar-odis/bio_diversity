@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB6FD639-E689-FE09-0DE8-6DAD5FD2BF89" name="QUALCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:28:27 UTC</createdTime>
+<commentInRDBMS>Table that houses descriptions for quality codes used to indicate the confidence in a measurement or observation throughout the database.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="QUAL_ID" id="C8D03D03-A246-F6AD-BF30-C60BD88658C6">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:30:31 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUAL_SHORT" id="03C7DA99-CDD9-0B88-F3FD-89CE434CCE44">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:30:58 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUAL_DESC" id="2448E0DB-EA96-68E0-FE13-CBD987D96B7D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:31:25 UTC</createdTime>
+<commentInRDBMS>Long description of the quality of the data value.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="CD198173-4BCB-D935-E532-EEE7532AB49C">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:18:57 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="323002EC-D9F6-AC96-5F26-C62E18F95C20">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:05:34 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7E09C3E0-B8A3-D661-CECD-D86383671AEA" name="QUALCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:30:31 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8D03D03-A246-F6AD-BF30-C60BD88658C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52B34FA7-3D83-6188-A011-BE1F5C87F75C" name="QUALCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:59:40 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03C7DA99-CDD9-0B88-F3FD-89CE434CCE44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF7D4ADA-486B-C810-B854-3D2379689C6E" name="QUALCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:12:26 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03C7DA99-CDD9-0B88-F3FD-89CE434CCE44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

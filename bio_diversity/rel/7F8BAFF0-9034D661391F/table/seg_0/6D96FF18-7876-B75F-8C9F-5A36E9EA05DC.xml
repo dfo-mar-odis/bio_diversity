@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D96FF18-7876-B75F-8C9F-5A36E9EA05DC" name="PROTOCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 14:04:03 UTC</createdTime>
+<commentInRDBMS>Table for housing the descriptions of the various types of protocols which may be followed during an event. </commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROTO_ID" id="07E02B56-DED7-64EF-69E3-0D79DD99284F">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 14:05:06 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>PROTO_ID_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>PROTO_ID_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="PROTO_SHORT" id="F664639C-EC53-0421-CC36-AA55E1679BE4">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 14:05:40 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROTO_DESC" id="D9A04841-15E5-77E1-03A1-961218F78827">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 14:06:32 UTC</createdTime>
+<commentInRDBMS>Long description for the type of protocol.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="63076145-7B0E-45A1-550B-5824C799F9D0">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 15:17:52 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="112E701E-E709-54E3-3696-BE162B7DAC90">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:41:03 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="72A53285-5672-16BA-E73D-68744E9BC571" name="PROTOCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 14:05:06 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07E02B56-DED7-64EF-69E3-0D79DD99284F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB8BF06E-C53D-C855-2B54-383EA5E4D872" name="PROTOCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:39:41 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F664639C-EC53-0421-CC36-AA55E1679BE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94640A52-1247-B55A-283C-1FB0A19AB32C" name="PROTOCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 15:29:35 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F664639C-EC53-0421-CC36-AA55E1679BE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

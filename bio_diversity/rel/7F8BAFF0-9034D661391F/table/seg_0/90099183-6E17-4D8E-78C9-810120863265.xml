@@ -1,0 +1,231 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90099183-6E17-4D8E-78C9-810120863265" name="FECUNDITY">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:46:38 UTC</createdTime>
+<commentInRDBMS>Table that houses the information required to estimate fecundity of a dam during a spawning. Including the  long term history of this information and changes over time.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_41</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FEC_ID" id="B8ADF8D8-5DDA-483D-FAC2-4C00EB5562FC">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:48:10 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK_ID" id="F9AD67BF-4D7A-DD21-C5F6-1F2931AD4284">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:50:15 UTC</createdTime>
+<commentInRDBMS>Links to the StockCodes table to identify the stock.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C66704C0-1EF8-88A4-290C-555991C9958D" referredColumn="0037FBFB-3BD4-E27D-1BF5-5E6C6543B289"/>
+</associations>
+</Column>
+<Column name="COLLECTION_ID" id="5C50C418-C6CE-D238-0E7F-5916F5A80753">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:15:30 UTC</createdTime>
+<commentInRDBMS>Links to the Collections table to describe the collection.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE2BA9E5-DD2A-8175-33B0-95BF295154CB" referredColumn="2BBCA54C-54D5-8E38-CFA5-49A28583093D"/>
+</associations>
+</Column>
+<Column name="FEC_START" id="4ACD6E4F-DF4D-0E68-BDBD-25BC8E4D7CE9">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:49:22 UTC</createdTime>
+<commentInRDBMS>Start date of the use of these information for arriving at the estimated fecundity of a female.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FEC_END" id="29F57FD5-A7E4-F8BA-5310-8E93D307FA7F">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:49:37 UTC</createdTime>
+<commentInRDBMS>The last date that this information was used for estimation of fecundity.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="A" id="339CC478-CB2F-D3DB-914D-91190AC76DA3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:51:21 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="B" id="1E3EC486-C3EC-E9E1-5DA0-739514E5D9FB">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:51:42 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STILL_VALID" id="C128EBAA-2866-8F66-B73D-932C8BFA3CE2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:52:02 UTC</createdTime>
+<commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="59E21DBA-A057-DB04-5A36-154BC73AACF0">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 14:57:08 UTC</createdTime>
+<commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="4FCCC473-86BC-FCB4-2003-CF67245470F2">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:47:21 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="FAB79BF2-D3E3-8B29-6074-AB330A45B9DA">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:49:14 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="959C6B39-1B12-9A92-AC53-79A59E302373" name="FECUNDITY_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:48:10 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8ADF8D8-5DDA-483D-FAC2-4C00EB5562FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="973D0E42-9E13-2380-5FCF-40869D1E085D" name="FECUNDITY__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:50:40 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9AD67BF-4D7A-DD21-C5F6-1F2931AD4284"/>
+<colUsage columnID="5C50C418-C6CE-D238-0E7F-5916F5A80753"/>
+<colUsage columnID="4ACD6E4F-DF4D-0E68-BDBD-25BC8E4D7CE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6E0CE18-75AA-7B67-192E-6EE4192DFA64" name="FECUNDITY__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:03:14 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9AD67BF-4D7A-DD21-C5F6-1F2931AD4284"/>
+<colUsage columnID="5C50C418-C6CE-D238-0E7F-5916F5A80753"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC666C0E-F4E0-AD05-F611-0DECF25EBD7F" name="FECUNDITY__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:03:49 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C128EBAA-2866-8F66-B73D-932C8BFA3CE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF2C890C-7CA3-76FB-23EF-A2A743720CD6" name="FECUNDITY__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 17:47:11 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9AD67BF-4D7A-DD21-C5F6-1F2931AD4284"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E03412E-B128-82A3-67BD-BE22C14838A5" name="FECUNDITY__IDXv3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 17:47:11 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C50C418-C6CE-D238-0E7F-5916F5A80753"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6070A0FE-7794-7F8C-EFAC-4812E001D2F7" name="FECUNDITY_STOCKCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:53:29 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9AD67BF-4D7A-DD21-C5F6-1F2931AD4284"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB35F7E8-615C-0D4A-9BD3-6A221301B128" name="FECUNDITY_COLLECTION_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:16:07 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C50C418-C6CE-D238-0E7F-5916F5A80753"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

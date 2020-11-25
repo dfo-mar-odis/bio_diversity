@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="57756455-ADEA-818F-6806-DC3323BEED37" containerWithKeyObject="4D066F7C-BA24-0FAD-D4D0-3024EA3337B8" localFKIndex="B8E3B310-B250-FD62-5F09-4111804FF32B" name="COUNTDET_ANIMALDETCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:33:41 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>ANIMALDETCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E7670283-BD4B-C746-85AE-8F52092E377F</referredTableID>
+<keyObject>ADCCF1FA-D545-3462-B2AC-DFFAF570BD04</keyObject>
+<referredKeyID>ADCCF1FA-D545-3462-B2AC-DFFAF570BD04</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ANI_DET_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

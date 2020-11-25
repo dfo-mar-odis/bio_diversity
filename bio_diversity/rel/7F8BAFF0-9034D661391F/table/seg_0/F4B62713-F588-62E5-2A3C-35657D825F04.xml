@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4B62713-F588-62E5-2A3C-35657D825F04" name="EVENTCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:59:21 UTC</createdTime>
+<commentInRDBMS>Table that describes the different types of events which may take place. Possible examples are spawning, field sampling, or counting of eggs.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EVT_ID" id="DB37E3A1-168A-29A7-8F37-3F27CA5AB593">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:00:18 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVT_SHORT" id="9AAC983C-5D45-2690-995C-13B3726B7D4C">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 13:30:45 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVT_DESC" id="E339A018-B970-74AA-F47B-590765573BD9">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:01:00 UTC</createdTime>
+<commentInRDBMS>Long description of the type of event.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="F35513F8-741E-EFF3-2DB5-A568E03F96DF">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 15:23:40 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="ED031EE2-DF07-C272-003F-DA70B6FAEA39">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:45:18 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A73A11C-A66B-11D6-0CFE-3546E627CD35" name="EVENTCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:00:18 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB37E3A1-168A-29A7-8F37-3F27CA5AB593"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89F7ADDB-EAA7-7AA5-5439-BB12FF6711B5" name="EVENTCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:40:01 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AAC983C-5D45-2690-995C-13B3726B7D4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE8C6A4F-1DCB-D520-8D97-8DFDAD70CDA7" name="EVENTCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 16:47:16 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AAC983C-5D45-2690-995C-13B3726B7D4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

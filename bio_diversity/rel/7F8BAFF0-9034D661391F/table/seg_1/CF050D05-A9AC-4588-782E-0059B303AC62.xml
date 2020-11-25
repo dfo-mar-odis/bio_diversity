@@ -1,0 +1,266 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="CF050D05-A9AC-4588-782E-0059B303AC62" name="TRAYDET">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 17:50:26 UTC</createdTime>
+<commentInRDBMS>Table that houses the various details for a tray.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_79</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TRAY_DET_ID" id="40EB0B1C-30C4-951F-1E8F-62141B707FFE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 17:50:53 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRAY_ID" id="46B76B90-B158-DF83-1F14-0075B3BB48CF">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 17:51:08 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CA2EC76-00B6-39E3-CC46-E584EC3998D3" referredColumn="19BADCDF-09F8-6F68-95B0-DDE5EC7AF005"/>
+</associations>
+</Column>
+<Column name="CONT_DET_ID" id="40E87CEE-DFB7-3688-9765-E44EAE4507A5">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 17:51:54 UTC</createdTime>
+<commentInRDBMS>Links to the ContainerDetCodes table to describe the type of detail recorded.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDC0AF34-64AD-AB2C-76C6-FBF10E6AF430" referredColumn="19C7013C-DB61-4AFF-30AA-722DAE0553CF"/>
+</associations>
+</Column>
+<Column name="VAL" id="213FB7AE-F2CB-1D52-D842-FDA1EF1A225E">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 17:52:09 UTC</createdTime>
+<commentInRDBMS>The value of the measurement if not a subjective observation.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,11,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONT_DET_SUBJ_ID" id="46809B61-3A30-F3A7-A708-0A6560912BF4">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 17:52:28 UTC</createdTime>
+<commentInRDBMS>Links to the ContDetSubjCodes table to describe the observation.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D5EBA10-7BA2-9539-22FB-5ACD71BF443B" referredColumn="B222346F-C5FF-0874-DED1-3EFD36708F7C"/>
+</associations>
+</Column>
+<Column name="TRAY_DET_START" id="2973B432-817E-BAA4-35D5-145C98FEEA91">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 17:52:50 UTC</createdTime>
+<commentInRDBMS>The date that the detail was recorded, mandatory.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRAY_DET_END" id="6A5EAD5C-D61F-6F68-997D-0B48B17E9E5D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 17:53:05 UTC</createdTime>
+<commentInRDBMS>The last date which the detail is still valid.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STILL_VALID" id="530E5901-512C-C702-B2BD-C62B94F42F17">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 17:53:26 UTC</createdTime>
+<commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="981340CD-466A-C7E3-9A80-5B8E37A2574B">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 15:10:49 UTC</createdTime>
+<commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="DAFE22DF-8BB9-8F2A-DE92-D9D1A34C15EB">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:35:48 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="510BC979-EB2E-E8D6-8C35-489FF6DC0CB7">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:15:05 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E25DBEE-A04A-74A4-9932-D89A4877427C" name="TRAYDET_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 17:50:53 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40EB0B1C-30C4-951F-1E8F-62141B707FFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="504C3750-DC91-42FB-DFFA-947118140082" name="TRAYDET__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 19:50:30 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46B76B90-B158-DF83-1F14-0075B3BB48CF"/>
+<colUsage columnID="40E87CEE-DFB7-3688-9765-E44EAE4507A5"/>
+<colUsage columnID="46809B61-3A30-F3A7-A708-0A6560912BF4"/>
+<colUsage columnID="2973B432-817E-BAA4-35D5-145C98FEEA91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E57C65AF-CC55-54EC-EE50-8B5665AC0E01" name="TRAYDET__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:40:06 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46B76B90-B158-DF83-1F14-0075B3BB48CF"/>
+<colUsage columnID="40E87CEE-DFB7-3688-9765-E44EAE4507A5"/>
+<colUsage columnID="46809B61-3A30-F3A7-A708-0A6560912BF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64C492D0-3F5C-F31E-E2B9-3826003D3C56" name="TRAYDET__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:40:12 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="530E5901-512C-C702-B2BD-C62B94F42F17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E068925A-B3E6-DBAD-695F-14E1B33B3F1A" name="TRAYDET__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 17:52:16 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46B76B90-B158-DF83-1F14-0075B3BB48CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3503204F-E5EC-FD1D-C097-E2CFE5609353" name="TRAYDET__IDXv3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 17:52:16 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40E87CEE-DFB7-3688-9765-E44EAE4507A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA9C2995-F53C-6625-0CE4-E11DBEBEC4DA" name="TRAYDET__IDXv4">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 17:52:16 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46809B61-3A30-F3A7-A708-0A6560912BF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF96B65D-1244-1AA5-5973-35C391A1DE13" name="TRAYDET_TRAY_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 18:30:52 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46B76B90-B158-DF83-1F14-0075B3BB48CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3814DA93-CD59-5691-E023-EDCEC8FB233E" name="TRAYDET_CONTAINERDETCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 18:34:35 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40E87CEE-DFB7-3688-9765-E44EAE4507A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FFE90E3-2183-95FE-27C1-401ACB618C6F" name="TRAYDET_CONTDETSUBJCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 18:34:49 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46809B61-3A30-F3A7-A708-0A6560912BF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="TRAYDET_CK_1" directorySegmentName="seg_2" id="535D67EC-0880-1FC6-910D-32D39E539E1A">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-12 15:49:58 UTC</createdTime>
+<ownerDesignName>BDF_Feb4</ownerDesignName>
+<rule>Val IS NOT NULL OR Cont_Det_Subj_ID IS NOT NULL</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

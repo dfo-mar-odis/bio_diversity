@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2615E14-1DBB-8ED2-409B-0FECA9417486" name="SPAWNDETSUBJCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 16:09:03 UTC</createdTime>
+<commentInRDBMS>Table that houses the information describing the subjective, or observational, information collected during a spawning.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_52</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPAWN_DET_SUBJ_ID" id="58950F3B-D649-0E63-B456-06F21DF4A69F">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 16:09:56 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPAWN_DET_ID" id="874B8F5D-11C9-DD07-768A-6ECD046A70DE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 16:10:25 UTC</createdTime>
+<commentInRDBMS>Links to the SpawnDetCodes table to describe the type of observation being recorded.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC9E3BF9-AFA3-6BD2-DF6A-EBE9B6EE02C4" referredColumn="6CF61031-10BA-6D59-AA0C-6BF224963567"/>
+</associations>
+</Column>
+<Column name="SPAWN_SUBJ_SHORT" id="3E579278-8C64-EA13-4C64-CE998D7A1966">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 16:14:12 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPAWN_SUBJ_DESC" id="BA96B908-8924-386C-D961-EF47B9A066D6">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 16:14:37 UTC</createdTime>
+<commentInRDBMS>Long description of the observation made.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="6B60210F-80C5-19BA-8DAE-32EF01EEA991">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:45:06 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="9FD1CCF0-B956-3195-75D8-4156B55410D6">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:48:11 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E4C9DD78-E1FB-B7D3-9197-F9DEC1F326CD" name="SPAWNDETSUBJCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 16:09:56 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58950F3B-D649-0E63-B456-06F21DF4A69F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C53809A-0E3A-5149-37B6-33768F01F5D5" name="SPAWNDETSUBJCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-20 19:09:35 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E579278-8C64-EA13-4C64-CE998D7A1966"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D5C2F7E-F33F-98C3-243F-5D0EFF53F049" name="SPAWNDETSUBJCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:02:11 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="874B8F5D-11C9-DD07-768A-6ECD046A70DE"/>
+<colUsage columnID="3E579278-8C64-EA13-4C64-CE998D7A1966"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F59B8EF-69FE-E5DC-30BE-2AB83C71892D" name="SPAWNDETSUBJCODE__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:15:17 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="874B8F5D-11C9-DD07-768A-6ECD046A70DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71402E3A-73C1-70CF-B15B-8F4A523D6D07" name="SPAWNDETSUBJCODE__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:15:17 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E579278-8C64-EA13-4C64-CE998D7A1966"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D82524FC-D1DC-7B28-7D2B-76F37B162AB8" name="SPAWNDETSUBJ_SPAWNDET_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 16:19:04 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="874B8F5D-11C9-DD07-768A-6ECD046A70DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

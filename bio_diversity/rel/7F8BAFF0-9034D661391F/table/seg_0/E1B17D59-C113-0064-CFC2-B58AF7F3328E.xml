@@ -1,0 +1,276 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1B17D59-C113-0064-CFC2-B58AF7F3328E" name="GROUPDET">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 18:40:58 UTC</createdTime>
+<commentInRDBMS>Table that houses details collected on a group during an event. For example the percentage of the group at a certain life history stage. Throughout the existence of a group, there may be many details collected on that group during different events and at different points in time.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_39</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GROUP_DET_ID" id="3B53B7EC-3417-C38A-DEC9-6FEF9E75C517">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 18:42:00 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANI_DET_XREF_ID" id="2751FF77-FBAA-766D-5E0F-D510462740A2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 15:16:40 UTC</createdTime>
+<commentInRDBMS>Links to the AniDetailsXRef table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="023FC196-259A-7659-5658-59D33FA077DA" referredColumn="2BFA287C-9699-CF3B-D672-8909DA0598D9"/>
+</associations>
+</Column>
+<Column name="ANI_DET_ID" id="1CA80D75-D00F-8CAE-DB79-22D2A6122843">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 18:43:07 UTC</createdTime>
+<commentInRDBMS>Links to the AniDetCodes table to describe the type of measurement.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCEFC413-2A47-5B31-E55C-1845631F1D58" referredColumn="670A36C2-7A74-5D01-0101-4B2B89BC8E20"/>
+</associations>
+</Column>
+<Column name="VAL" id="FB2FCC90-7B4F-3D14-B7E9-DF41D71CE656">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 18:45:12 UTC</createdTime>
+<commentInRDBMS>The value of the measurement if not a subjective observation.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,11,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANI_DET_SUBJ_ID" id="02997A38-A6C2-2BD7-DE7C-6DC610689A7D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 18:46:27 UTC</createdTime>
+<commentInRDBMS>Links to the AniDetSubjCodes to describe the subjective value.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED8291D9-4F52-9B96-8933-28E9A0007259" referredColumn="EEA4F2BA-DE84-3DE1-A5B0-F601FFF4D2C0"/>
+</associations>
+</Column>
+<Column name="QUAL_ID" id="82452195-6D30-8BF0-8C76-42D2D1BF7556">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 18:28:53 UTC</createdTime>
+<commentInRDBMS>Links to the QualCodes table to describe the confidence in the recorded information.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30AFBD4E-02C7-B290-7817-730F468DE49F" referredColumn="C8D03D03-A246-F6AD-BF30-C60BD88658C6"/>
+</associations>
+</Column>
+<Column name="STILL_VALID" id="033147F4-B330-D35E-2DBD-CD7659B15BE1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-24 14:16:48 UTC</createdTime>
+<commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="D5B4DAA8-7719-DB89-7757-1E84E9C54D58">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 14:56:10 UTC</createdTime>
+<commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="9144A257-5EC6-6BD3-E722-DF976C8D8AAC">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:48:47 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="80A5CA49-38B6-CB07-EB5E-5057225591C1">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:50:31 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D870AAB-2A50-CB04-C31F-28C2A9E3345D" name="GROUPDET_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 18:42:00 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B53B7EC-3417-C38A-DEC9-6FEF9E75C517"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAE98E6A-FFAA-EF55-6062-2D1F68B97A95" name="GROUPDET__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 13:39:31 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2751FF77-FBAA-766D-5E0F-D510462740A2"/>
+<colUsage columnID="1CA80D75-D00F-8CAE-DB79-22D2A6122843"/>
+<colUsage columnID="02997A38-A6C2-2BD7-DE7C-6DC610689A7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D8DBD63-FAFC-AF99-F8F6-163B25D46F35" name="GROUPDET__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:05:47 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2751FF77-FBAA-766D-5E0F-D510462740A2"/>
+<colUsage columnID="1CA80D75-D00F-8CAE-DB79-22D2A6122843"/>
+<colUsage columnID="02997A38-A6C2-2BD7-DE7C-6DC610689A7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FD2EE92-55DD-0E8B-426F-0FBCBF238240" name="GROUPDET__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:05:55 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82452195-6D30-8BF0-8C76-42D2D1BF7556"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46592FBB-18BA-5231-0093-731350A821CA" name="GROUPDET__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:06:00 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="033147F4-B330-D35E-2DBD-CD7659B15BE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14CFA3EF-7DEB-78EF-CDAA-CE8F81BFCBB3" name="GROUPDET__IDXv3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 17:44:38 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2751FF77-FBAA-766D-5E0F-D510462740A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61C6DF04-66A9-B6CE-02B9-6C7F1F01F3C3" name="GROUPDET__IDXv4">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 17:44:50 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CA80D75-D00F-8CAE-DB79-22D2A6122843"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC2C9A90-411E-15F2-8732-FF7FFA8230EE" name="GROUPDET__IDXv5">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 17:44:50 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02997A38-A6C2-2BD7-DE7C-6DC610689A7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E45DBCF-5702-F9F8-20A6-C49A68730251" name="GROUPDET_ANIMALDETCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 18:48:11 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CA80D75-D00F-8CAE-DB79-22D2A6122843"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C26C5027-F048-A603-F5A4-9B56BF8CB693" name="GROUPDET_QUALCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 18:29:33 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82452195-6D30-8BF0-8C76-42D2D1BF7556"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A85B0553-2577-701A-1D09-AEEE93825832" name="GROUPDET_ANIDETSUBJCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 15:29:10 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02997A38-A6C2-2BD7-DE7C-6DC610689A7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EC3CB19-B7F0-AA72-AA94-CD528CF7EB7C" name="GROUPDET_ANIDETAILXREF_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 15:17:10 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2751FF77-FBAA-766D-5E0F-D510462740A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="GROUPDET_CK_1" directorySegmentName="seg_1" id="3B97D9E2-DF5F-A270-FF2D-B3B6CB1ED39D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-12 15:27:29 UTC</createdTime>
+<ownerDesignName>BDF_Feb4</ownerDesignName>
+<rule>Val IS NOT NULL OR Ani_Det_Subj_ID IS NOT NULL</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

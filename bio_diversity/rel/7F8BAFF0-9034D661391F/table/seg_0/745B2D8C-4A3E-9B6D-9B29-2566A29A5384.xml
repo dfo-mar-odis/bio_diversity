@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="745B2D8C-4A3E-9B6D-9B29-2566A29A5384" name="TANK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-29 19:40:37 UTC</createdTime>
+<commentInRDBMS>Table that uniquely identifies the tanks in use in the facilities.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_67</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TANK_ID" id="F125EDE4-A067-926C-8A37-128FFCB6D714">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-29 19:40:58 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TANK_SHORT" id="FC91BD4E-5F33-4B9C-7C31-DAC887827D43">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 16:49:14 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TANK_DESC" id="9EFB307E-8FC5-FB5A-2CA8-1C330444C971">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-06 13:29:39 UTC</createdTime>
+<commentInRDBMS>Longer description of the container.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="F0E3E101-47EA-4BE2-A1E7-9DF8EE017689">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:36:10 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="85066BA9-79AD-DE12-EE80-A19D6C27B50C">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:14:18 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E028E4DD-FDF1-5617-F683-4C9B110F8062" name="TANK_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-29 19:40:58 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F125EDE4-A067-926C-8A37-128FFCB6D714"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A896CD1-F6BF-5159-2559-9118B4CB9C75" name="TANK__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-30 16:49:49 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC91BD4E-5F33-4B9C-7C31-DAC887827D43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="167746E1-BE86-6CAA-0E6F-860B74BDD674" name="TANK__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:38:27 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC91BD4E-5F33-4B9C-7C31-DAC887827D43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6340A323-08B8-CA94-6790-F4F08586663D" name="ENVCONDFILE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 13:26:00 UTC</createdTime>
+<commentInRDBMS>Table that houses files created when recording enviromental conditions. For example the file from a temperature recorder deployed to a tank or a field location.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_59</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENV_COND_FILE_ID" id="58FE5A0B-E82E-B945-6B74-2D9026A76873">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 13:27:17 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENV_COND_ID" id="C15ED1D7-31C4-E805-5B50-D5830115A120">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 13:28:14 UTC</createdTime>
+<commentInRDBMS>Links to EnvConditions table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>60</dataTypePrecision>
+<ownDataTypeParameters>,60,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E854998A-AA79-8A74-E096-A89C8154ED53" referredColumn="983CA456-1BD0-2E91-98CC-ABEA031CA6C4"/>
+</associations>
+</Column>
+<Column name="RAW_FILE" id="6F273B2F-B467-6877-3607-AEB1849651F4">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 13:29:36 UTC</createdTime>
+<commentInRDBMS>The file which contains the data associated with the environmental condition monitoring.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="B651A210-F769-C73C-86CD-4BBB2BC8A59D">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 14:59:46 UTC</createdTime>
+<commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="0E05397A-C655-88DA-8056-63ACC00CC433">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:31:17 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="39343445-285E-0350-B96E-E1DA444F6886">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:02:50 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F551DA2A-0FAA-3B0F-866E-70EFBCBE032B" name="ENVCONDFILE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 13:27:17 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58FE5A0B-E82E-B945-6B74-2D9026A76873"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2592DAF-7BA7-7FAF-C4AB-9AF110B3BC55" name="ENVCONDFILE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 14:16:54 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C15ED1D7-31C4-E805-5B50-D5830115A120"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39D1DA71-1019-411D-00C5-2341C7A7DE44" name="ENVCONDFILE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:37:12 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C15ED1D7-31C4-E805-5B50-D5830115A120"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DBF48BA-B84F-C1C7-59A6-70FE660A0A3C" name="ENVCONDFILE_ENVCONDITION_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 13:35:49 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C15ED1D7-31C4-E805-5B50-D5830115A120"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

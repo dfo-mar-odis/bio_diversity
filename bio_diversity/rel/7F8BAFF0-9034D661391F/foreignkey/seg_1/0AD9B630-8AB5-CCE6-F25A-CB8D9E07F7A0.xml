@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="0AD9B630-8AB5-CCE6-F25A-CB8D9E07F7A0" containerWithKeyObject="599B93E6-BA7A-C401-650F-B470F58B7175" localFKIndex="E8048E9E-D63E-5100-B324-9C647133379B" name="IMAGE_DRAWER_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-06 17:45:22 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>DRAWER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A0C4D776-3F88-5C80-6793-0950BC2A4677</referredTableID>
+<keyObject>2F24209A-8C18-F9B1-24D9-5B40998E723A</keyObject>
+<referredKeyID>2F24209A-8C18-F9B1-24D9-5B40998E723A</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>DRAWER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

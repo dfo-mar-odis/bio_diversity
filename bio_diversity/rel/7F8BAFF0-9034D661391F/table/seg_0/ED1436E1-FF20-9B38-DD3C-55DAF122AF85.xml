@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED1436E1-FF20-9B38-DD3C-55DAF122AF85" name="UNITCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 14:27:26 UTC</createdTime>
+<commentInRDBMS>Table that houses the descriptions of units of measure used throughout the database.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_48</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UNIT_ID" id="E8F8814A-F724-6EEF-8ADC-DDA1D28B7EC0">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 14:28:09 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIT_SHORT" id="B6F0E775-8BBE-95F4-344D-E7F36ABECAE2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 14:28:09 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIT_DESC" id="79F59978-BB7D-2C79-0685-2F77692EC0D0">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 14:28:36 UTC</createdTime>
+<commentInRDBMS>Long description of the unit of measure.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="CD867B8B-D115-ECD5-BF6D-A9868732B6F3">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:19:42 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="F16DC08A-E7A8-8EC7-5CC1-40662F631A86">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:05:50 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7CF1AF36-7233-C957-13CA-E38CE4B27CC0" name="UNITCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 14:28:09 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8F8814A-F724-6EEF-8ADC-DDA1D28B7EC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D3D61EA-A112-819B-5AE0-08FF75315030" name="UNITCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:59:48 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6F0E775-8BBE-95F4-344D-E7F36ABECAE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEB36D10-30F9-E6BE-65D2-C53A51526699" name="UNITCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:12:18 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6F0E775-8BBE-95F4-344D-E7F36ABECAE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

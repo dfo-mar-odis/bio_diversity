@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79E1C87B-2F1B-AD3F-A59F-1BCB390DE4D0" name="INSTRUMENT">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:22:34 UTC</createdTime>
+<commentInRDBMS>Table that houses information on the instrument used, if applicable, for the collection of the environmental conditions of a location.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INSTRUM_ID" id="F2C89636-6855-FFC4-FEB0-D147F64EF2B8">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:23:31 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INST_ID" id="64B577D4-DAC4-175E-B29B-05DB79F45490">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:53:27 UTC</createdTime>
+<commentInRDBMS>Links to the InstrumentCodes table to describe the type of instrument.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C83A467-0970-4769-B53A-C925B25C1700" referredColumn="5BB97F7B-3312-E969-92A9-105F999D0A2A"/>
+</associations>
+</Column>
+<Column name="SERIAL_NUMBER" id="6D66D7E5-A35C-FB8D-D0D9-6A093A685FA6">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:25:16 UTC</createdTime>
+<commentInRDBMS>Serial number of the instrument used.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="F90F4707-DE8E-D541-5554-A0EEC1D552F9">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 15:00:21 UTC</createdTime>
+<commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="A21D3C04-36AA-0CCA-5C81-27817FF1AC76">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:29:59 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="955F9276-6EEE-D55F-9DFE-9F216F68F771">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:03:06 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C01AFBB9-1133-141B-5C20-F05CC314B6BD" name="INSTRUMENT_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:25:35 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2C89636-6855-FFC4-FEB0-D147F64EF2B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF28168C-2077-2CDF-730F-00A73016EFDF" name="INSTRUMENT__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 14:13:30 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64B577D4-DAC4-175E-B29B-05DB79F45490"/>
+<colUsage columnID="6D66D7E5-A35C-FB8D-D0D9-6A093A685FA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F452AE3A-7243-16DA-387B-30A718F324F2" name="INSTRUMENT_SERIAL_NUM_UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-06 19:48:17 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D66D7E5-A35C-FB8D-D0D9-6A093A685FA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D251933-68DF-A84E-A0EF-4E86769AD403" name="INSTRUMENT__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:26:46 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64B577D4-DAC4-175E-B29B-05DB79F45490"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C34A7041-8619-FCEE-3DEC-1F8C9B54476C" name="INSTRUMENT_INSTRUMENTCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:56:03 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64B577D4-DAC4-175E-B29B-05DB79F45490"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

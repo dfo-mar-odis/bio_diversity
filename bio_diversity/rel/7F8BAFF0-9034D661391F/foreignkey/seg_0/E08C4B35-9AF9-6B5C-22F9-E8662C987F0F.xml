@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E08C4B35-9AF9-6B5C-22F9-E8662C987F0F" containerWithKeyObject="66C4D6E6-8434-20E3-205D-0D0C3EF77218" localFKIndex="BF70544B-EFAA-4CC8-D92A-39A1CCB84C1A" name="LOCATION_RIVERCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:23:06 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>RIVERCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2C8EA5F0-FD05-95F7-2697-6A3767BA67E5</referredTableID>
+<keyObject>D453E4C6-E711-4E03-FC85-8C1416311351</keyObject>
+<referredKeyID>D453E4C6-E711-4E03-FC85-8C1416311351</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>RIVER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

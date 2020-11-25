@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02F9A33E-95BD-3117-ED9C-688B8587DB8C" name="COLLECTION">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:13:23 UTC</createdTime>
+<commentInRDBMS>Table that houses the descriptions of the possible collections for an animal or group of animals.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_63</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COLLECTION_ID" id="2BBCA54C-54D5-8E38-CFA5-49A28583093D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:14:06 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLLECTION_SHORT" id="DF09A60F-0869-467B-CCC5-74304709517C">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:14:31 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLLECTION_DESC" id="03936133-AE8F-A72A-693E-5A73CEB40ABF">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:14:51 UTC</createdTime>
+<commentInRDBMS>Long description for the collection.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="25407470-B422-B7AB-AE6B-6B25A922E55E">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:46:24 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="5806C403-DAAB-1D23-EBE7-7C5B0F534E3C">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:48:58 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B66F69EF-914A-1BC6-A977-412D37379F81" name="COLLECTION_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:14:06 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BBCA54C-54D5-8E38-CFA5-49A28583093D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="425BDEF7-79C9-66C6-1E90-8CE3CEC4B9A5" name="COLLECTION__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:50:00 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF09A60F-0869-467B-CCC5-74304709517C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CF8173C-2458-66C5-BB86-612744144F92" name="COLLECTION__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:03:03 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF09A60F-0869-467B-CCC5-74304709517C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
