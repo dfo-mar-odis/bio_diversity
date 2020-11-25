@@ -1,0 +1,240 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0229F27-5A69-9DE4-2219-F31325FFC103" name="PROGRAM">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:30:57 UTC</createdTime>
+<commentInRDBMS>Information regarding the program which the event is a part of.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROGRAM_ID" id="73AC2656-D082-29CA-8C7D-7375AA5F15C9">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:31:40 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>PROGRAM_ID_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>PROGRAM_ID_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="PROGRAM_NAME" id="BBC08D8A-74D7-1E94-9BDF-B61B21D53E06">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:33:05 UTC</createdTime>
+<commentInRDBMS>Name of the program, must be unique in this table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROGRAM_DESC" id="14BF0B9B-47AD-1C02-491D-D91D1DC2DC8E">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:32:22 UTC</createdTime>
+<commentInRDBMS>Description of the program.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROG_AUTH_ID" id="EF9FC7A7-99F5-D195-1657-A18A541D62C1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:34:25 UTC</createdTime>
+<commentInRDBMS>Links to the ProgAuthorities table. The person in charge of the program, the primary investigator.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E4EA043-556C-9E44-8C23-4A7BB099C983" referredColumn="D2375834-EB89-1414-E1AC-F21A115BBB9D"/>
+</associations>
+</Column>
+<Column name="ORG_ID" id="94FC37DC-5F21-6184-BFCB-054B6EB1918B">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:04:05 UTC</createdTime>
+<commentInRDBMS>Links to the Organizations table to describe the organization leading the program.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0579C796-0B6B-CDF9-018D-5F0F06BCAEA7" referredColumn="AFCC92AE-90B2-4CCC-17F2-E6A0FCB3B90A"/>
+</associations>
+</Column>
+<Column name="PROGRAM_START" id="93D06529-D5CA-BB37-1F33-E1898EE833A2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 13:56:34 UTC</createdTime>
+<commentInRDBMS>Start date of the program, mandatory field.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROGRAM_END" id="57CBDE0D-6428-A06F-5048-8F2D18E80E67">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 13:56:52 UTC</createdTime>
+<commentInRDBMS>End date of the program.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STILL_VALID" id="953FDF6C-7697-784E-502D-6B0AAE81EA72">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 12:56:05 UTC</createdTime>
+<commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="45B010DF-BBE6-9C0C-CE83-240550E5914E">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 14:51:38 UTC</createdTime>
+<commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="7F714294-0565-A6FA-04BA-83054B1A6030">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 15:20:55 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="3AB86612-74C2-6D3C-87D3-D5A9252E8978">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:42:27 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0B5770C6-86B0-CD77-A15A-CE059786C501" name="PROGRAM_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:31:40 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73AC2656-D082-29CA-8C7D-7375AA5F15C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0140A25C-8713-AF7A-30A2-71939A3CC5D6" name="PROGRAM__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:45:27 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBC08D8A-74D7-1E94-9BDF-B61B21D53E06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99A6AD6F-6B3D-07B9-3321-4EE6DEA9EA47" name="PROGRAM__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 15:36:36 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBC08D8A-74D7-1E94-9BDF-B61B21D53E06"/>
+<colUsage columnID="94FC37DC-5F21-6184-BFCB-054B6EB1918B"/>
+<colUsage columnID="EF9FC7A7-99F5-D195-1657-A18A541D62C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5CE5091-9A3A-2BFD-C793-54966DF2607A" name="PROGRAM__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 15:37:55 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="953FDF6C-7697-784E-502D-6B0AAE81EA72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F20089F-310F-B303-2E7C-30700EA2A63D" name="PROGRAM__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:13:53 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBC08D8A-74D7-1E94-9BDF-B61B21D53E06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76C6C827-07E8-9258-17C3-F651FB82231C" name="PROGRAM__IDXv3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:13:53 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF9FC7A7-99F5-D195-1657-A18A541D62C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B58958A4-F507-1CA7-4CEA-9250776C2920" name="PROGRAM__IDXv4">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:13:53 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94FC37DC-5F21-6184-BFCB-054B6EB1918B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A22FF464-EAFC-9533-52B1-106F6A93F494" name="PROGRAM_ORGANIZATION_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:10:31 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94FC37DC-5F21-6184-BFCB-054B6EB1918B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFE0B1E6-8C12-50FD-7136-A57B3FC423E2" name="PROGRAM_PROGAUTHORITY_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 14:11:16 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF9FC7A7-99F5-D195-1657-A18A541D62C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="B3C5FF30-B4D9-1EC7-3F77-B3EEFBB442AC" containerWithKeyObject="0B4CC266-DBA5-9323-ED31-C938256550B8" localFKIndex="40CE86BB-F481-E919-2EB5-1ECD60C2173B" name="MATINGPLAN_EVENT_FK">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-12 18:16:02 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>EVENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F1F5150A-0469-0041-9F80-10600CF975E3</referredTableID>
+<keyObject>3666646C-DE3A-9503-BA45-A94AED7288CB</keyObject>
+<referredKeyID>3666646C-DE3A-9503-BA45-A94AED7288CB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>EVENT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

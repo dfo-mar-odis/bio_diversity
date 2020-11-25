@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8B48D34-1F7E-AB6B-A6A4-01D60A11302E" name="SAMPLECODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:23:22 UTC</createdTime>
+<commentInRDBMS>Table that describes the type of sampling performed.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_46</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SAMP_ID" id="97C32BED-AB7F-1E9C-0086-EF7598825D22">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:24:00 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAMP_SHORT" id="CD24EE38-E965-6239-88AA-21CA046B5FBE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:24:23 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAMP_DESC" id="CE13C2A1-10EB-C7A3-77C4-A3F822749DA2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:24:47 UTC</createdTime>
+<commentInRDBMS>Long description of the type of sample.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="0FBD5232-9851-4F86-F121-15DE8FEDAD5E">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:17:51 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="ABBFB98F-CEC5-6E09-14EE-555447AD9A73">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:04:14 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="633CAF55-D6CA-6DED-0EB7-8A8F442AF2D3" name="SAMPLECODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:24:00 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97C32BED-AB7F-1E9C-0086-EF7598825D22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CE940D5-6DA7-0049-B800-6DFB3A08EF12" name="SAMPLECODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:53:06 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD24EE38-E965-6239-88AA-21CA046B5FBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEA51B18-94CC-99D9-1A6F-980F6E33AADD" name="SAMPLECODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:10:48 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD24EE38-E965-6239-88AA-21CA046B5FBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

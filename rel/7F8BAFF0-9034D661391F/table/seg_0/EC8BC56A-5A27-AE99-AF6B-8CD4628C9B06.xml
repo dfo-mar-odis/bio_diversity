@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC8BC56A-5A27-AE99-AF6B-8CD4628C9B06" name="LOCCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 12:48:50 UTC</createdTime>
+<commentInRDBMS>Table which houses the descriptions of the types of locations.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOC_ID" id="07FCDC0F-CF69-A94F-EE9E-A8B4C5992B7C">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 12:50:40 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOC_SHORT" id="6D7F6802-26DB-61B6-A161-D73B66D26B80">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 12:52:22 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOC_DESC" id="37020B7A-A240-7B57-1CF1-FD313019B6F9">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 12:51:29 UTC</createdTime>
+<commentInRDBMS>Long description of the type of location.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="62F4065A-5C0D-81AB-1FC7-9A9BE9A438B5">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:51:08 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="7995F4FA-3905-3E11-AEC0-DEDC598C0B93">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:51:33 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8F622C0-FCAD-C213-F350-AABCECEA15EA" name="LOCCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 12:50:40 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07FCDC0F-CF69-A94F-EE9E-A8B4C5992B7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A53812F4-3E17-19FA-7DB2-4715D9732F5B" name="LOCCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:35:43 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D7F6802-26DB-61B6-A161-D73B66D26B80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3CAAD1D-5B86-7A83-C99A-D90971650BF8" name="LOCCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 16:57:44 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D7F6802-26DB-61B6-A161-D73B66D26B80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

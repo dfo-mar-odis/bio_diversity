@@ -1,0 +1,316 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="520FD2F2-20BC-8627-9C9B-A8750109EF42" name="CONTAINERXREF">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 14:19:49 UTC</createdTime>
+<commentInRDBMS>Table to cross reference from the various unique containers for housing the fish to the Events table. This table allows for containers within a container, for example which tray is in which trough of a facility and when. Also used to link either an individual or group to the container which they are, or were at one time, housed in. Allows for keeping the history of where an individual has been over the time at the facility.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_75</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTAINER_XREF_ID" id="BF0893FD-C9B4-C513-33A1-92DC1A28D20F">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 14:20:27 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENT_ID" id="99FD0F9D-A1FC-A38F-ABAA-2ECC22FBC6D6">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 16:58:08 UTC</createdTime>
+<commentInRDBMS>Links to the Events table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>45</dataTypePrecision>
+<ownDataTypeParameters>,45,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="742068F8-5EBE-25CE-14CB-E4D6E88502BC" referredColumn="14A37245-A5F9-DDA5-5850-BE9A795B7237"/>
+</associations>
+</Column>
+<Column name="TANK_ID" id="21E8FF49-1263-805F-58AA-5A0CC23BC4E2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 17:43:56 UTC</createdTime>
+<commentInRDBMS>Links to the Tanks table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="677BB3DB-592F-8865-E08E-1E7FE6E2112C" referredColumn="F125EDE4-A067-926C-8A37-128FFCB6D714"/>
+</associations>
+</Column>
+<Column name="TROUGH_ID" id="6D855FD2-EEF5-203C-F81B-8737A68C4C2B">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 17:44:18 UTC</createdTime>
+<commentInRDBMS>Links to the Troughs table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B6FAB2E-510F-3F97-56E1-16923B819C85" referredColumn="9F78192C-7198-A6FE-0DDF-0598D81F8608"/>
+</associations>
+</Column>
+<Column name="TRAY_ID" id="30BB671C-4957-DA36-1211-45AA9F96F70F">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 17:46:13 UTC</createdTime>
+<commentInRDBMS>Links to the Trays table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8148365-ACFD-DBA9-47AE-6EC594F90550" referredColumn="19BADCDF-09F8-6F68-95B0-DDE5EC7AF005"/>
+</associations>
+</Column>
+<Column name="HEATH_UNIT_ID" id="7226981C-C39E-917B-9083-BB74DCBC061D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 17:44:43 UTC</createdTime>
+<commentInRDBMS>Links to the HeathUnits table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01500307-121F-35F3-C6D7-C648A76C60DD" referredColumn="7C9BA3D5-16B0-A3E3-472F-A3E6992E7CAC"/>
+</associations>
+</Column>
+<Column name="DRAWER_ID" id="C71E2844-A51C-BDEE-6AA0-2E4116E3E556">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 17:44:58 UTC</createdTime>
+<commentInRDBMS>Links to the Drawers table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3559F582-9BF7-ED08-B522-3836F66D387B" referredColumn="9A8A7F72-85E6-1062-35DA-FDBF5AE10482"/>
+</associations>
+</Column>
+<Column name="CUP_ID" id="576E535C-9FCB-411D-931A-18DB96AC0BED">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 17:45:35 UTC</createdTime>
+<commentInRDBMS>Links to the Cups table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47AE2020-ED03-3A66-861C-53F7B9FC5C4C" referredColumn="92673BD9-BE4C-64D6-FE40-A501A07EB44D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EE0547A-DC50-F4F3-8E75-E368FE2AC280" name="CONTAINERXREF_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 14:20:27 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF0893FD-C9B4-C513-33A1-92DC1A28D20F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA5A42C8-6A7D-08B2-67D2-473BF0139ED9" name="CONTAINERXREF__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 19:04:05 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99FD0F9D-A1FC-A38F-ABAA-2ECC22FBC6D6"/>
+<colUsage columnID="21E8FF49-1263-805F-58AA-5A0CC23BC4E2"/>
+<colUsage columnID="6D855FD2-EEF5-203C-F81B-8737A68C4C2B"/>
+<colUsage columnID="30BB671C-4957-DA36-1211-45AA9F96F70F"/>
+<colUsage columnID="7226981C-C39E-917B-9083-BB74DCBC061D"/>
+<colUsage columnID="C71E2844-A51C-BDEE-6AA0-2E4116E3E556"/>
+<colUsage columnID="576E535C-9FCB-411D-931A-18DB96AC0BED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E434F41-14F2-07C8-9971-6BE417D4F0C0" name="CONTAINERXREF__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:16:09 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99FD0F9D-A1FC-A38F-ABAA-2ECC22FBC6D6"/>
+<colUsage columnID="21E8FF49-1263-805F-58AA-5A0CC23BC4E2"/>
+<colUsage columnID="6D855FD2-EEF5-203C-F81B-8737A68C4C2B"/>
+<colUsage columnID="30BB671C-4957-DA36-1211-45AA9F96F70F"/>
+<colUsage columnID="7226981C-C39E-917B-9083-BB74DCBC061D"/>
+<colUsage columnID="C71E2844-A51C-BDEE-6AA0-2E4116E3E556"/>
+<colUsage columnID="576E535C-9FCB-411D-931A-18DB96AC0BED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B138BEF-3F89-247E-2D97-B174BC243F70" name="CONTAINERXREF__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:01:19 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99FD0F9D-A1FC-A38F-ABAA-2ECC22FBC6D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0BCE341-68C1-D4BB-7D1E-1B361577F510" name="CONTAINERXREF__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:01:19 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21E8FF49-1263-805F-58AA-5A0CC23BC4E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0642CD1-EB28-ADA6-76A5-F8AC64820A69" name="CONTAINERXREF__IDXv3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:01:19 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D855FD2-EEF5-203C-F81B-8737A68C4C2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7631D21-C496-185C-EBA5-8E54CE7DB5B9" name="CONTAINERXREF__IDXv4">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:01:19 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30BB671C-4957-DA36-1211-45AA9F96F70F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD86F2C4-2AFF-5121-A6F0-1191BC41DBE4" name="CONTAINERXREF__IDXv5">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:01:19 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7226981C-C39E-917B-9083-BB74DCBC061D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D07A7518-B481-695F-5061-D12C492F1AE9" name="CONTAINERXREF__IDXv6">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:01:19 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C71E2844-A51C-BDEE-6AA0-2E4116E3E556"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EC3050C-FB2B-369B-5312-34AF66AEBDF2" name="CONTAINERXREF__IDXv7">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:01:19 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="576E535C-9FCB-411D-931A-18DB96AC0BED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B78F742-511A-1917-6AD0-29FBF58E495A" name="CONTAINERXREF_EVENT_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-04 16:58:29 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99FD0F9D-A1FC-A38F-ABAA-2ECC22FBC6D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="547A6C51-7822-0988-89E9-D2642AD3C5CB" name="CONTAINERXREF_CUP_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-05 14:27:18 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="576E535C-9FCB-411D-931A-18DB96AC0BED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D501E2E9-EF97-5186-8C63-0A038D912E45" name="CONTAINERXREF_DRAWER_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-05 14:27:32 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C71E2844-A51C-BDEE-6AA0-2E4116E3E556"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E517B03D-94B1-2B6F-93CE-773A1AAF3E63" name="CONTAINERXREF_HEATHUNIT_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-05 14:27:53 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7226981C-C39E-917B-9083-BB74DCBC061D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B71AB904-188B-9E3D-B6C5-29304135C3F2" name="CONTAINERXREF_TANK_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-05 14:28:28 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21E8FF49-1263-805F-58AA-5A0CC23BC4E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CA443C7-3729-D051-1FB9-0C83F9C70EA4" name="CONTAINERXREF_TRAY_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-05 14:28:46 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30BB671C-4957-DA36-1211-45AA9F96F70F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7A01464-5D35-009B-5B14-085164F9A5C4" name="CONTAINERXREF_TROUGH_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-05 14:29:08 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D855FD2-EEF5-203C-F81B-8737A68C4C2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CONTAINERXREF_CK_1" directorySegmentName="seg_1" id="25A0CD2A-8F5E-0A8E-D6E4-8E9A390ED39D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-12 15:19:37 UTC</createdTime>
+<ownerDesignName>BDF_Feb4</ownerDesignName>
+<rule>Tank_ID IS NOT NULL OR Trough_ID IS NOT NULL OR Tray_ID IS NOT NULL OR &lt;br/&gt;Heath_unit_ID IS NOT NULL OR Drawer_ID IS NOT NULL OR Cup_ID IS NOT NULL</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

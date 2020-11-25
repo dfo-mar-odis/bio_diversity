@@ -1,0 +1,193 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7670283-BD4B-C746-85AE-8F52092E377F" name="ANIMALDETCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 17:25:20 UTC</createdTime>
+<commentInRDBMS>Table that houses the descriptions for the various meaurements or observations for either individuals or groups of fish.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_36</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ANI_DET_ID" id="670A36C2-7A74-5D01-0101-4B2B89BC8E20">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 17:26:18 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANI_DET_SHORT" id="860DE4A3-BFF0-120C-7138-1676E8A95EEA">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 17:27:37 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANI_DET_DESC" id="70DF309C-B77C-1037-FD1C-C651DC7A9F79">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 17:27:37 UTC</createdTime>
+<commentInRDBMS>The long description of the type of detail recorded for the individual or group.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIN_VAL" id="8765F18F-DB52-E370-BAC2-B69EC3770062">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 17:28:36 UTC</createdTime>
+<commentInRDBMS>The minimum value permitted for the measurement being recorded, used for quality control.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,11,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_VAL" id="0B5F88AE-B55F-8E53-0B45-27B86A52D23D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 17:28:57 UTC</createdTime>
+<commentInRDBMS>The maximum value permitted for the measurement being recorded, used for quality control.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,11,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIT_ID" id="8ACA62A9-BFAA-EB74-AB2E-1F302D0AB087">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 17:29:45 UTC</createdTime>
+<commentInRDBMS>Links to the UnitCodes table to describe the unit of measure for the data.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B13B0385-3C93-81DA-2BC7-40578633CF19" referredColumn="E8F8814A-F724-6EEF-8ADC-DDA1D28B7EC0"/>
+</associations>
+</Column>
+<Column name="ANI_SUBJ_FLAG" id="6FFDA634-B60D-E68C-ADFC-DD9852178680">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 17:30:57 UTC</createdTime>
+<commentInRDBMS>Flag to indicate if the detail is subjective or a true measurement.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="AEA44E39-5A64-4178-D597-0D98BF38533B">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:20:26 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="EF5869E0-689D-3285-E501-1FF2A4C430E6">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:07:20 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADCCF1FA-D545-3462-B2AC-DFFAF570BD04" name="ANIMALDETCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 17:26:18 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="670A36C2-7A74-5D01-0101-4B2B89BC8E20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EB37232-366F-91DD-9C43-C64363A0EFED" name="ANIMALDETCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:52:00 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="860DE4A3-BFF0-120C-7138-1676E8A95EEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3703071F-66BC-2A33-BAE1-9A78D17BB2F5" name="ANIMALDETCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:13:21 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="860DE4A3-BFF0-120C-7138-1676E8A95EEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FAFB5AF-64C8-FF04-DED1-81AB5B4EE57E" name="ANIMALDETCODE__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:13:27 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8ACA62A9-BFAA-EB74-AB2E-1F302D0AB087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D192433D-7A51-D8A0-9833-CD72EFC3FEAB" name="ANIMALDETCODE__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:13:33 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FFDA634-B60D-E68C-ADFC-DD9852178680"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="094F6BB0-E5FD-FB6D-5D3E-408933C89606" name="ANIMALDETCODE_UNITCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 14:29:21 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8ACA62A9-BFAA-EB74-AB2E-1F302D0AB087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ANIMALDETCODE_CK_1" directorySegmentName="seg_2" id="049D50DF-1FBC-E09D-2EDA-F3FEAF7E6454">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 14:33:38 UTC</createdTime>
+<ownerDesignName>BDF_Feb4</ownerDesignName>
+<rule>NOT (Ani_Subj_Flag = &apos;Y&apos; AND Unit_ID IS NOT NULL)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

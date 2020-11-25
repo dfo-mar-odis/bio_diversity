@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D16767C0-466F-0314-D1B8-0C1D359DD089" name="STOCKCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:21:00 UTC</createdTime>
+<commentInRDBMS>Table that houses the descriptions of the various stocks of the animals.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_40</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STOCK_ID" id="0037FBFB-3BD4-E27D-1BF5-5E6C6543B289">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:22:57 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK_SHORT" id="74DB8665-4AF8-D69E-1E67-E4541246C795">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:22:28 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK_DESC" id="4F1F7004-C5F7-FAA4-B9C2-776A93CE535F">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:24:22 UTC</createdTime>
+<commentInRDBMS>Long description of the stock.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="C7E75DA3-4E2F-1871-1C71-4F80A89E4689">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:47:41 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="F9CD8526-364A-2455-A497-74D18BB787A6">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:49:37 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F5640F20-CDAC-FA8E-2EEE-FF9A6D8C899F" name="STOCKCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:22:57 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0037FBFB-3BD4-E27D-1BF5-5E6C6543B289"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E4FACB5-E247-B838-57C8-6315ACE60E33" name="STOCKCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 17:23:18 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74DB8665-4AF8-D69E-1E67-E4541246C795"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5FA8F58-D95B-CAC6-575C-6E8AF8BE7C60" name="STOCKCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:02:56 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74DB8665-4AF8-D69E-1E67-E4541246C795"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

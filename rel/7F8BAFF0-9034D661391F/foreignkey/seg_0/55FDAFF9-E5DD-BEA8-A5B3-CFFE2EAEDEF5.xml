@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="55FDAFF9-E5DD-BEA8-A5B3-CFFE2EAEDEF5" containerWithKeyObject="66C4D6E6-8434-20E3-205D-0D0C3EF77218" localFKIndex="7E1BC92B-1D2D-AB15-CAC1-B0C0F0663092" name="LOCATION_SUBRIVERCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:23:27 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>SUBRIVERCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0BDF9496-C2FC-D846-4E10-DA748CECEA3A</referredTableID>
+<keyObject>431371FF-C146-972F-94FD-7821D2974FF4</keyObject>
+<referredKeyID>431371FF-C146-972F-94FD-7821D2974FF4</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>SUBRIVER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

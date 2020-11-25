@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8FBBA50F-B89E-38B8-A379-5713AAB15234" name="SAMPLE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:08:55 UTC</createdTime>
+<commentInRDBMS>Table that houses information on sampling performed at a location during an event.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_44</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SAMPLE_ID" id="887C106F-3133-75A4-CD7E-7A44522445A3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:11:19 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION_ID" id="0F04B918-F669-A5D9-C7BE-7EE39700FB65">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 14:51:47 UTC</createdTime>
+<commentInRDBMS>Links to the Locations table to describe where the sampling was performed.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D25B347B-7DD9-C63D-D459-6B6838BCFB23" referredColumn="7AC7973E-1760-A64D-9F45-6D8ED9890372"/>
+</associations>
+</Column>
+<Column name="SAMPLE_FISHNO" id="1D729E30-6560-23FD-CF07-22F0B2AA917F">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:11:47 UTC</createdTime>
+<commentInRDBMS>The fish number assigned to the animal for sampling purposes.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPEC_ID" id="1E95FC50-55CE-3D9D-51EE-E5A2E3CC1132">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:12:05 UTC</createdTime>
+<commentInRDBMS>Links to the SpeciesCodes table to describe the species sampled.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="129B1943-24F4-C674-E687-9C9696E464DD" referredColumn="C10D1904-7E4B-EA51-5489-8DA9E51081B1"/>
+</associations>
+</Column>
+<Column name="SAMP_ID" id="D84C4DD0-DAC0-BD9B-4610-7105CC48D437">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:25:55 UTC</createdTime>
+<commentInRDBMS>Links to the SampleCodes table to describe the type of sample performed.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C7E5B8F-C1F0-F80E-9E60-BF0BF59595BE" referredColumn="97C32BED-AB7F-1E9C-0086-EF7598825D22"/>
+</associations>
+</Column>
+<Column name="COMMENTS" id="6FC633B4-46C2-0DD4-B154-C9FA05057B8C">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 15:06:10 UTC</createdTime>
+<commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="CDA73260-82E2-9454-7A8D-B0060237C41D">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:18:11 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="62AF55B0-4D98-B9B0-2588-DBB6E3F1C66D">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:04:00 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5D125F6-6C46-94C3-9E07-8D7524DDFFAD" name="SAMPLE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:11:19 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="887C106F-3133-75A4-CD7E-7A44522445A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D4631C4-C37B-E469-596E-C01C01722359" name="SAMPLE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 14:44:16 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F04B918-F669-A5D9-C7BE-7EE39700FB65"/>
+<colUsage columnID="D84C4DD0-DAC0-BD9B-4610-7105CC48D437"/>
+<colUsage columnID="1E95FC50-55CE-3D9D-51EE-E5A2E3CC1132"/>
+<colUsage columnID="1D729E30-6560-23FD-CF07-22F0B2AA917F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3563CF57-5C66-9360-A123-A330CA21B723" name="SAMPLE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:11:16 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F04B918-F669-A5D9-C7BE-7EE39700FB65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2888819F-25C8-69D4-0C3B-00609E6A654A" name="SAMPLE__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:11:26 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E95FC50-55CE-3D9D-51EE-E5A2E3CC1132"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CC47232-D82C-D663-E995-1AC52824A04D" name="SAMPLE__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:11:37 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D84C4DD0-DAC0-BD9B-4610-7105CC48D437"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0CABAF5-451C-F6FE-E282-8278C5BE3EAE" name="SAMPLE_SAMPLECODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:26:12 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D84C4DD0-DAC0-BD9B-4610-7105CC48D437"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85B118FB-F369-80CB-42DA-D023136FD832" name="SAMPLE_SPECIESCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 13:26:26 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E95FC50-55CE-3D9D-51EE-E5A2E3CC1132"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B2BD2AF-C9BE-78E2-77C5-D0BE2AD8EF67" name="SAMPLE_LOCATION_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 14:52:06 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F04B918-F669-A5D9-C7BE-7EE39700FB65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB2925D1-FB5D-CB16-A026-657F6B88DC6E" name="ENVCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:02:32 UTC</createdTime>
+<commentInRDBMS>Table that describes the type of environmental conditions being collected. The condition may either be a true measurement (ie temperature) or  subjective observations (ie strong current).</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENV_ID" id="A294148F-32E4-E61A-E02A-8C02A71C5F63">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:03:28 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENV_SHORT" id="9F93DB4B-679A-BD20-F2C7-CBC5B9018F13">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:06:51 UTC</createdTime>
+<commentInRDBMS>Short unique description of the type of variable.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENV_DESC" id="09198599-6860-F765-0686-B4544CD230B1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:07:51 UTC</createdTime>
+<commentInRDBMS>Long description of the variable.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIN_VAL" id="A15B0D66-589D-7C5A-8792-932FD594F8CD">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:09:12 UTC</createdTime>
+<commentInRDBMS>The minimum valid value for the measurement, used for quality assurance.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,11,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_VAL" id="D8080D19-A5A7-ED61-CE2B-243FEC1F1EDF">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:10:11 UTC</createdTime>
+<commentInRDBMS>The maximum valid value of the measurement, used in quality assurance.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,11,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIT_ID" id="4D9677B0-7C83-8327-57A0-CC23F05EBFB1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-08 17:33:24 UTC</createdTime>
+<commentInRDBMS>Links to the UnitCodes table for the description of the unit of measure for the variable.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15E20146-F28E-9F9B-717D-3D1103F486DA" referredColumn="E8F8814A-F724-6EEF-8ADC-DDA1D28B7EC0"/>
+</associations>
+</Column>
+<Column name="ENV_SUBJ_FLAG" id="7B8B2511-6795-6D10-DDEA-6587C64B5508">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 12:46:36 UTC</createdTime>
+<commentInRDBMS>Flag indicating if the type of measurement is observationl, or subjective. Boolean, Y or N.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="0F71AED3-0075-CE5F-5C0D-D4FBDD47B0A4">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:30:28 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="C96F1EA7-881F-BAAB-FBDF-656B28F0364C">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:08:43 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9286EBC5-8CAF-A734-AFF8-0949B89ACC46" name="ENVCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:03:28 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A294148F-32E4-E61A-E02A-8C02A71C5F63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F21169F9-C331-F40E-268D-952E36BC9397" name="ENVCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:54:33 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F93DB4B-679A-BD20-F2C7-CBC5B9018F13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87F67A51-1082-4569-C503-A8389E80D988" name="ENVCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:08:31 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F93DB4B-679A-BD20-F2C7-CBC5B9018F13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5454BC1-229D-1E2E-2CB2-37FC9267B14C" name="ENVCODE__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:08:40 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D9677B0-7C83-8327-57A0-CC23F05EBFB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30E96D42-D46A-B1DC-349A-14A78B82AF66" name="ENVCODE__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:08:56 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B8B2511-6795-6D10-DDEA-6587C64B5508"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="017DFFE3-F41A-58E4-4C7F-23A1E505E19A" name="ENVCODE_UNITCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 14:29:45 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D9677B0-7C83-8327-57A0-CC23F05EBFB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ENVCODE_CK_1" directorySegmentName="seg_2" id="1B54EAE5-F750-5C23-ECFB-A8002EFA230D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 14:32:02 UTC</createdTime>
+<ownerDesignName>BDF_Feb4</ownerDesignName>
+<rule>NOT (Env_Subj_Flag = &apos;Y&apos; AND Unit_ID IS NOT NULL)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

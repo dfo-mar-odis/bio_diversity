@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="DA46E44F-CF46-13DD-A41E-B722C079F99C" containerWithKeyObject="D99CB71C-D02D-0878-B1EB-D85BCC6381FF" localFKIndex="76DD7172-DF52-331B-03A7-4E9FE337F3EF" name="FEEDING_FEEDMETHOD_FK">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-02-27 11:48:40 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>FEEDMETHOD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A6220A91-F2C0-1345-19D8-0E753EB3BB98</referredTableID>
+<keyObject>FB2060B1-2128-D635-148B-3BD61EA6E2E7</keyObject>
+<referredKeyID>FB2060B1-2128-D635-148B-3BD61EA6E2E7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FEEDMETHOD_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

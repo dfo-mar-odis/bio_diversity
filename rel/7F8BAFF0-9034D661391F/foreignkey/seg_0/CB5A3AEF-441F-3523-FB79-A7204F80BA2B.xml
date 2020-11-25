@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CB5A3AEF-441F-3523-FB79-A7204F80BA2B" containerWithKeyObject="599B93E6-BA7A-C401-650F-B470F58B7175" localFKIndex="7BB8E32A-5371-463A-AA67-A5066DF6B989" name="IMAGE_GROUPDET_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-14 12:57:53 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>GROUPDET</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E1B17D59-C113-0064-CFC2-B58AF7F3328E</referredTableID>
+<keyObject>2D870AAB-2A50-CB04-C31F-28C2A9E3345D</keyObject>
+<referredKeyID>2D870AAB-2A50-CB04-C31F-28C2A9E3345D</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>GROUP_DET_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,332 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1F5150A-0469-0041-9F80-10600CF975E3" name="EVENT">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:20:24 UTC</createdTime>
+<commentInRDBMS>Information that describes an event, or work task. Includes the who, what, and when. An event may span multiple days (spawning) or take place within a single day. Events may affect many animals or only a single individual animal. Moving a group of animals from one location to another would be an event for example.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EVENT_ID" id="14A37245-A5F9-DDA5-5850-BE9A795B7237">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:26:45 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAC_ID" id="55FB5396-EF6D-BD74-6C93-EF4862CB8549">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:34:41 UTC</createdTime>
+<commentInRDBMS>Foreign key to the Facilities table which describes the facility performing the work for the event.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A7C7D7D-16EB-C2B8-E2EC-586A528E47DF" referredColumn="1F95A9AC-147C-5382-C09C-B1CAC69EB4CC"/>
+</associations>
+</Column>
+<Column name="EVT_ID" id="B09330E7-69FC-4CF1-CBBF-4DFE2BD29A93">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:48:36 UTC</createdTime>
+<commentInRDBMS>Links to the EventCodes table to describe the type of event taking place.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F364A86-A6FC-55E5-1128-CC61BD7F63A3" referredColumn="DB37E3A1-168A-29A7-8F37-3F27CA5AB593"/>
+</associations>
+</Column>
+<Column name="PER_ID" id="10AD7CFE-C200-1A3E-C00B-B44D2F4FE7E2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:22:23 UTC</createdTime>
+<commentInRDBMS>Links to the PersonnelCodes table. If the work is performed by a team the team leader, or if solitary work, the person performing the task.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1893BD7F-7CA5-8BB3-7FC0-84E4EF8CBF10" referredColumn="CA264753-F022-2E56-25CA-DDF5D3117757"/>
+</associations>
+</Column>
+<Column name="PROGRAM_ID" id="50B68CE5-57CA-FA8C-3BDE-C8F82F87C2FB">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:36:31 UTC</createdTime>
+<commentInRDBMS>Optional, links to a specific program, used if the event is specific to a program.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="128D7D21-C4A6-6CE3-2383-14AA718B08D9" referredColumn="73AC2656-D082-29CA-8C7D-7375AA5F15C9"/>
+</associations>
+</Column>
+<Column name="TEAM_ID" id="5617B9C1-5FF6-98ED-9398-DA0551F131AE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:30:19 UTC</createdTime>
+<commentInRDBMS>Links to the Teams table. Describes the members and their roles for the team, if applicable, for the event.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D593E90-F803-37F0-870E-FB98F9A886BA" referredColumn="8B591E7C-F6C7-DDB1-6B8E-C60EAFB91913"/>
+</associations>
+</Column>
+<Column name="EVENT_START" id="F084BFAC-F86F-53AB-1B2D-D6CCEA0A65A5">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:35:37 UTC</createdTime>
+<commentInRDBMS>Start date of the event.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENT_START_TIME" id="24BD7AB0-F8C5-6E74-AE01-204F794AD35C">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:39:23 UTC</createdTime>
+<commentInRDBMS>The start time of the event, valid entires are 1 to 2400. Time is local time.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>2400</endValue>
+<description>VALID TIME</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="EVENT_END" id="4822BBA6-E453-10C9-79A9-FB652CD439DC">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:45:30 UTC</createdTime>
+<commentInRDBMS>End date of event.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENT_END_TIME" id="1370B5D7-595C-BE09-9823-D27CC7E61C5F">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:46:08 UTC</createdTime>
+<commentInRDBMS>The end time of the event, valid entires are 1 to 2400. Time is local time.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>2400</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="COMMENTS" id="E1E028C4-6961-4EE0-5F08-721CD50515E8">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 14:52:07 UTC</createdTime>
+<commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="8AA32D66-9E98-C960-B815-3AE4375029FC">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 15:22:36 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="EF9F3920-EBD2-0DB2-4B2C-F57056F1C67E">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:44:01 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3666646C-DE3A-9503-BA45-A94AED7288CB" name="EVENT_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:26:45 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14A37245-A5F9-DDA5-5850-BE9A795B7237"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2B801CD-B191-C063-158C-020173C3F9C6" name="EVENT__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:57:13 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55FB5396-EF6D-BD74-6C93-EF4862CB8549"/>
+<colUsage columnID="B09330E7-69FC-4CF1-CBBF-4DFE2BD29A93"/>
+<colUsage columnID="50B68CE5-57CA-FA8C-3BDE-C8F82F87C2FB"/>
+<colUsage columnID="F084BFAC-F86F-53AB-1B2D-D6CCEA0A65A5"/>
+<colUsage columnID="4822BBA6-E453-10C9-79A9-FB652CD439DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E457E4C7-2729-2ED8-D651-FE4F103BB9E3" name="EVENT__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 15:38:52 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55FB5396-EF6D-BD74-6C93-EF4862CB8549"/>
+<colUsage columnID="B09330E7-69FC-4CF1-CBBF-4DFE2BD29A93"/>
+<colUsage columnID="10AD7CFE-C200-1A3E-C00B-B44D2F4FE7E2"/>
+<colUsage columnID="50B68CE5-57CA-FA8C-3BDE-C8F82F87C2FB"/>
+<colUsage columnID="5617B9C1-5FF6-98ED-9398-DA0551F131AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9147354-85E5-B803-B032-93F0949B8E86" name="EVENT__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:13:25 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55FB5396-EF6D-BD74-6C93-EF4862CB8549"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44681FF9-9245-B8B0-CEDD-8891C07823D5" name="EVENT__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:13:25 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B09330E7-69FC-4CF1-CBBF-4DFE2BD29A93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A750249-013C-85B9-A404-8D403D3B95D5" name="EVENT__IDXv3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:13:25 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10AD7CFE-C200-1A3E-C00B-B44D2F4FE7E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FBFD1C6-B501-3DD4-64AC-0E6F1F066521" name="EVENT__IDXv4">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:13:25 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50B68CE5-57CA-FA8C-3BDE-C8F82F87C2FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7EE5475-83FB-0214-BF43-79822812A786" name="EVENT__IDXv5">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:13:25 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5617B9C1-5FF6-98ED-9398-DA0551F131AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2AD1D9EF-3537-166B-5F0E-2E2126B313EA" name="EVENT_FACILITY_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 17:37:00 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55FB5396-EF6D-BD74-6C93-EF4862CB8549"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9B2EDF2-559A-0E4C-0DEF-F69669527750" name="EVENT_EVENTCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:06:31 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B09330E7-69FC-4CF1-CBBF-4DFE2BD29A93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19F6D097-114E-0C8D-C063-361E92312BA3" name="EVENT_PROGRAM_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:37:43 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50B68CE5-57CA-FA8C-3BDE-C8F82F87C2FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3D30BF7-BB59-3084-1580-F89CF7FE8881" name="EVENT_TEAM_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:21:23 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5617B9C1-5FF6-98ED-9398-DA0551F131AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0431F5C7-2139-9D90-E23F-28974D98A6E8" name="EVENT_PERSONNELCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:23:42 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10AD7CFE-C200-1A3E-C00B-B44D2F4FE7E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

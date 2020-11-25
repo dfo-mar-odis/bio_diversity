@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="33990564-CF44-E798-BD54-E2B1E00D9384" containerWithKeyObject="3DDFB9A0-5B68-6F8D-CC86-A7DF6F9044EF" localFKIndex="F80D9311-13E9-735A-D7F2-364A0C153DB3" name="ENVCONDITION_LOCATION_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-06 19:46:02 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>LOCATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>66C4D6E6-8434-20E3-205D-0D0C3EF77218</referredTableID>
+<keyObject>9678741F-40B2-BBBC-4659-525122D4A389</keyObject>
+<referredKeyID>9678741F-40B2-BBBC-4659-525122D4A389</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>LOCATION_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

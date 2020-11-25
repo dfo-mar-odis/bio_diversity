@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="7D44372C-ABE1-0157-3A73-8563804CAA2D" containerWithKeyObject="7FB26CB7-10A0-D5F2-8930-D70FCBBF31F0" localFKIndex="CA06E25F-318E-3FB4-2E80-0013A474095F" name="TREATMENT_ENVTREATCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:18:00 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>ENVTREATMENTCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AA26C868-D591-D8A2-3048-89DA85E40821</referredTableID>
+<keyObject>D3F0ACA5-EE8A-F61E-8B27-E525325DACAB</keyObject>
+<referredKeyID>D3F0ACA5-EE8A-F61E-8B27-E525325DACAB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ENV_TREAT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0BDF9496-C2FC-D846-4E10-DA748CECEA3A" name="SUBRIVERCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:20:31 UTC</createdTime>
+<commentInRDBMS>The table which describes the subriver of the event location. This table allows for reporting on specific parts of a river system.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUBRIVER_ID" id="08001D03-20EE-5D7D-3335-A4EDAAAAC1E3">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:21:10 UTC</createdTime>
+<comment>Use to house various subares on a river way which are frequented for the work. Include simply bounding box coords, plus name, plus description</comment>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RIVER_ID" id="604577E9-6DFE-BCD1-FB4C-4EF5DFE56F60">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 13:37:02 UTC</createdTime>
+<commentInRDBMS>Links to the RiverCodes table for the description of the river system the subriver area is part of.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E30C176A-BA31-4B04-0333-9797F9D8B981" referredColumn="8BB0A7B9-9AF8-0F21-94D5-10FBD635D508"/>
+</associations>
+</Column>
+<Column name="TRIB_ID" id="45BCC313-8065-FA6D-E7AF-70EE2BDD5779">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-24 15:12:38 UTC</createdTime>
+<commentInRDBMS>Links to the Tributaries table if the subriver is part of a tributary. Optional.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D810FDFC-FC4D-E8ED-23AB-972C710C3B17" referredColumn="3AA7B644-F3AF-7A6E-9022-71B636C623C1"/>
+</associations>
+</Column>
+<Column name="SUBRIVER_SHORT" id="F181140F-359B-7E7B-0C14-9941D7E88824">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 13:33:21 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBRIVER_DESC" id="FF5FF247-7998-4B27-F031-ECAAB016DFB5">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 13:34:10 UTC</createdTime>
+<commentInRDBMS>Long description of the river area.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="B266139D-918A-4860-09E8-66A1B4D3C59B">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:51:32 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="08270EB9-FDDF-2087-32CA-10F58EA26243">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:59:51 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="431371FF-C146-972F-94FD-7821D2974FF4" name="SUBRIVERCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:21:10 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08001D03-20EE-5D7D-3335-A4EDAAAAC1E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CA49105-9DA4-4025-2683-0A00129BB7C0" name="SUBRIVERCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:46:57 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F181140F-359B-7E7B-0C14-9941D7E88824"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC973975-C3CB-B8AB-4589-D2E937934EFB" name="SUBRIVERCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 16:56:56 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F181140F-359B-7E7B-0C14-9941D7E88824"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9EE244B-29ED-EE15-8D51-93C8232AE0D5" name="SUBRIVERCODE__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 16:57:05 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="604577E9-6DFE-BCD1-FB4C-4EF5DFE56F60"/>
+<colUsage columnID="45BCC313-8065-FA6D-E7AF-70EE2BDD5779"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6EEDE55-C0EE-BAA9-22C4-7E43CB8D8EB7" name="SUBRIVERCODE__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:09:02 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="604577E9-6DFE-BCD1-FB4C-4EF5DFE56F60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C53ACF13-1B3F-D336-3C0E-C785C857DE9B" name="SUBRIVERCODE__IDXv3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:09:02 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45BCC313-8065-FA6D-E7AF-70EE2BDD5779"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="906B1BD6-DEDA-C234-CF1B-BC2C80C5B389" name="SUBRIVER_RIVERCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 13:37:40 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="604577E9-6DFE-BCD1-FB4C-4EF5DFE56F60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC6E4343-10D0-78CF-384F-8A05691B6F98" name="SUBRIVERCODE_TRIBUTARY_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-24 15:13:05 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45BCC313-8065-FA6D-E7AF-70EE2BDD5779"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

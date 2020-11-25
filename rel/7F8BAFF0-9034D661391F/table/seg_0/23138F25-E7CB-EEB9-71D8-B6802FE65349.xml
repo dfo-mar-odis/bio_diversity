@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="23138F25-E7CB-EEB9-71D8-B6802FE65349" name="SPECIESCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 18:44:16 UTC</createdTime>
+<commentInRDBMS>Table which describes the species associated with the data in the database, default is currently Atlantic Salmon for all tables other than sampling.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPEC_ID" id="C10D1904-7E4B-EA51-5489-8DA9E51081B1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 18:44:49 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPEC_SHORT" id="170B119F-CD6B-E134-0AE8-127446683D7E">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-20 18:57:49 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPECIES" id="83AABFD1-4DC0-0408-731E-BD7A8A3AC9DC">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 18:45:20 UTC</createdTime>
+<commentInRDBMS>The taxonomic name for the species.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMON_NAME" id="0CBE54EC-391E-4A1D-231C-BA4EFE4AAF01">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 18:45:48 UTC</createdTime>
+<commentInRDBMS>The common name of the species.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="A7831203-1DC7-E43C-5D8F-D923809BB465">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:50:18 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="C4DB6325-7D31-2A69-8F9E-8E84543B13F7">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-11 12:11:17 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4389FEFE-DF3B-335E-3C97-EB56D5254B21" name="SPECIESCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 18:51:03 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C10D1904-7E4B-EA51-5489-8DA9E51081B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6C3CEC1-799A-3D54-3204-0F493DC3E52B" name="SPECIESCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 13:00:05 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="170B119F-CD6B-E134-0AE8-127446683D7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4FBE630-5873-07C2-3DB2-D1D4476213FB" name="SPECIESCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:06:15 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="170B119F-CD6B-E134-0AE8-127446683D7E"/>
+<colUsage columnID="83AABFD1-4DC0-0408-731E-BD7A8A3AC9DC"/>
+<colUsage columnID="0CBE54EC-391E-4A1D-231C-BA4EFE4AAF01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D37A8D73-04DB-EE74-5ADE-D89450CC3506" name="SPECIESCODE__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:07:07 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="170B119F-CD6B-E134-0AE8-127446683D7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0E02554-D718-A642-71E1-A7C376D489A9" name="SPECIESCODE__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:07:07 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CBE54EC-391E-4A1D-231C-BA4EFE4AAF01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA1D8742-759B-7FE5-D560-519630C0D214" name="SPECIESCODE__IDXv3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:07:07 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83AABFD1-4DC0-0408-731E-BD7A8A3AC9DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

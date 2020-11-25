@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5C83A467-0970-4769-B53A-C925B25C1700" containerWithKeyObject="79E1C87B-2F1B-AD3F-A59F-1BCB390DE4D0" localFKIndex="C34A7041-8619-FCEE-3DEC-1F8C9B54476C" name="INSTRUMENT_INSTRUMENTCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 15:56:03 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>INSTRUMENTCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EB28E8FE-4AF0-F3CA-1392-D00A7A3ED35F</referredTableID>
+<keyObject>092816CE-E1FC-D791-1987-324E01F48F3C</keyObject>
+<referredKeyID>092816CE-E1FC-D791-1987-324E01F48F3C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>INST_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

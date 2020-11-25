@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="F1AE59BC-7D2B-90FF-6161-C2D7B7BFEA07" containerWithKeyObject="599B93E6-BA7A-C401-650F-B470F58B7175" localFKIndex="03FECA10-57EB-2BA6-F9A1-A9A0D209C48D" name="IMAGE_HEATHUNITDET_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-06 17:45:54 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>HEATHUNITDET</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D64C8856-8CD2-0681-3E22-65ACEB2496FE</referredTableID>
+<keyObject>6578BD23-AC27-51ED-0BB0-F7DC0FFFBEB4</keyObject>
+<referredKeyID>6578BD23-AC27-51ED-0BB0-F7DC0FFFBEB4</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>HEATH_UNIT_DET_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

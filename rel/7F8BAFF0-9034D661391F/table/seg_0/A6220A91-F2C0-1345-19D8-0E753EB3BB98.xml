@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6220A91-F2C0-1345-19D8-0E753EB3BB98" name="FEEDMETHOD">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-02-27 11:42:45 UTC</createdTime>
+<comment>Contains the information on the method, for example manual or automated, on how the feed is delivered.</comment>
+<commentInRDBMS>Table that houses the fedding method codes and descriptions.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_73</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FEEDMETHOD_ID" id="E6050B36-39D1-4718-4342-3B827547C28F">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-02-27 11:44:47 UTC</createdTime>
+<commentInRDBMS>System generated unique ID.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FEEDMETHOD_SHORT" id="88C4EE27-8E8C-5415-77D0-4F6039C59A2B">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-02-27 11:45:34 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FEEDMETHOD_DESC" id="DCC42C9F-B94F-3DAA-3FD4-1FD903727B7E">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-02-27 11:46:06 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="7E3ECCD7-9C5E-B03B-44ED-A752F4638C23">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:22:33 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="274D933C-55F6-CD54-89DA-AF9F2E7AFD2D">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:08:03 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB2060B1-2128-D635-148B-3BD61EA6E2E7" name="FEEDMETHOD_PK">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-02-27 11:44:47 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6050B36-39D1-4718-4342-3B827547C28F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7663FA33-1125-A19F-2A29-84AE7806D940" name="FEEDMETHOD__UN">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-02-27 11:46:27 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88C4EE27-8E8C-5415-77D0-4F6039C59A2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43C47CD2-AF92-483E-1747-B088E43CDE6A" name="FEEDMETHOD__IDX">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-02-27 13:07:48 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88C4EE27-8E8C-5415-77D0-4F6039C59A2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

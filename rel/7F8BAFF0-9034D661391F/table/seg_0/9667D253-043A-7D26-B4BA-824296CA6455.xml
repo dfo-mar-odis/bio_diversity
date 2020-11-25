@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9667D253-043A-7D26-B4BA-824296CA6455" name="PERSONNELCODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:06:55 UTC</createdTime>
+<commentInRDBMS>Table that houses the personnel which may be involved performing various tasks as part of a team, or as the team lead or individual for an event.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<abbreviation>PER</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PER_ID" id="CA264753-F022-2E56-25CA-DDF5D3117757">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:08:13 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PER_FIRST_NAME" id="2786141C-9C3F-C793-2AB9-1FD90D110D36">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:08:52 UTC</createdTime>
+<commentInRDBMS>First name of the person performing the task.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PER_LAST_NAME" id="7602DEA3-3807-C66C-97E6-7D08C20DC08D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:09:33 UTC</createdTime>
+<commentInRDBMS>Last name of the person performing the task.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STILL_VALID" id="CB297969-FD7D-7A32-680D-411FAEF33A15">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-10 12:00:42 UTC</createdTime>
+<commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="30763F3F-64A2-F2D1-9A58-2A7D350B36E8">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 15:22:59 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="8203D08B-DA5A-B5C7-BD70-C33979A7F8E9">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:44:18 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B86AF9C0-11E9-6A4C-1988-EBB0CD27947A" name="PERSONNELCODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:08:13 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA264753-F022-2E56-25CA-DDF5D3117757"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82DA6CF1-E2C9-652A-5DAA-54B3D7AD61B6" name="PERSONNELCODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:40:19 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2786141C-9C3F-C793-2AB9-1FD90D110D36"/>
+<colUsage columnID="7602DEA3-3807-C66C-97E6-7D08C20DC08D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA27F72C-BF48-84F2-68B5-95CBD923EFEF" name="PERSONNELCODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 16:47:36 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2786141C-9C3F-C793-2AB9-1FD90D110D36"/>
+<colUsage columnID="7602DEA3-3807-C66C-97E6-7D08C20DC08D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0124D52-8142-B665-C5B3-9435E7C60B0B" name="PERSONNELCODE__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 16:47:42 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB297969-FD7D-7A32-680D-411FAEF33A15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

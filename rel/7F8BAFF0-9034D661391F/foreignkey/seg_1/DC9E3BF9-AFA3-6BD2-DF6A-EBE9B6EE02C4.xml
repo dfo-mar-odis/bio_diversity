@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="DC9E3BF9-AFA3-6BD2-DF6A-EBE9B6EE02C4" containerWithKeyObject="F2615E14-1DBB-8ED2-409B-0FECA9417486" localFKIndex="D82524FC-D1DC-7B28-7D2B-76F37B162AB8" name="SPAWNDETSUBJ_SPAWNDET_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 16:19:04 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<referredTableLongName>SPAWNDETCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>51337D80-53A4-1E23-656F-288F9660582D</referredTableID>
+<keyObject>D9A3666F-FA3F-E508-5A43-53E862655CCA</keyObject>
+<referredKeyID>D9A3666F-FA3F-E508-5A43-53E862655CCA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SPAWN_DET_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

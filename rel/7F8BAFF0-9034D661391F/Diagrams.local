@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="sub_view" objectID="0274D89A-7269-FD77-BAF6-604422A638E0" name="10_Spawnings" visible="false"/>
+   <object objectType="sub_view" objectID="0372B37A-7D1F-B1D4-9FA6-A951EA70F6D6" name="14_Instruments" visible="false"/>
+   <object objectType="sub_view" objectID="07270C9B-460F-3EE3-8CD7-9C44715130BE" name="03_Locations" visible="false"/>
+   <object objectType="sub_view" objectID="14308EAE-57DC-36DD-F1EF-0C3A3D08961A" name="BDF_Relational - SubView_1v1" visible="true"/>
+   <object objectType="main_view" objectID="1AA35B2E-F8F5-C8D3-510B-499BD01824AD" name="BDF_Relational" visible="true"/>
+   <object objectType="sub_view" objectID="1B99915F-103A-F33A-B559-1EBA349B267F" name="16_Images" visible="false"/>
+   <object objectType="sub_view" objectID="3FBE2484-AD6C-9F99-1BDF-6448BDCAE958" name="06_IndTreatments" visible="false"/>
+   <object objectType="sub_view" objectID="4F3E28A6-8524-4CDB-A12C-7847A15479E8" name="09_ContainerDetails" visible="false"/>
+   <object objectType="sub_view" objectID="58F5796D-3C36-8FCE-B309-264ABA78DF6C" name="02_Events" visible="false"/>
+   <object objectType="sub_view" objectID="5B1DFBE9-499E-526C-201B-9C376D2B274B" name="12_Samples" visible="false"/>
+   <object objectType="sub_view" objectID="60AC7010-7110-091E-88DC-04D93967FF20" name="08_ContainersXRef" visible="false"/>
+   <object objectType="sub_view" objectID="6983ADCA-802B-1D71-A1A0-D6D3CE52B3DC" name="05_AniDetailsXref" visible="false"/>
+   <object objectType="sub_view" objectID="7344BEF4-7CE7-1258-35AE-7FCF39B6A918" name="04_Individuals" visible="false"/>
+   <object objectType="sub_view" objectID="8ABBD8FE-D929-9991-59CC-C3786F988CCD" name="17_Feedings" visible="false"/>
+   <object objectType="sub_view" objectID="A0215503-889E-890B-64C3-7B4169C8EFDE" name="15_EnvTreatments" visible="false"/>
+   <object objectType="sub_view" objectID="B38FAE13-1C92-B5A9-E3C7-74A40E267176" name="07_Groups" visible="false"/>
+   <object objectType="sub_view" objectID="D3CC4B0F-DA58-8C2C-5D64-67EAE0869E0F" name="01_Programs" visible="false"/>
+   <object objectType="sub_view" objectID="DDA6780B-8BF6-3F81-BED3-D9BC4EF5B799" name="11_Counts" visible="false"/>
+   <object objectType="sub_view" objectID="F573B047-139A-3B6C-B63C-544FAB4DC1C3" name="13_EnvConditions" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

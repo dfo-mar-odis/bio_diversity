@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0C4D776-3F88-5C80-6793-0950BC2A4677" name="DRAWER">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-29 19:41:57 UTC</createdTime>
+<commentInRDBMS>Table that uniquely identifes the drawers in the heath units.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_69</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DRAWER_ID" id="9A8A7F72-85E6-1062-35DA-FDBF5AE10482">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-29 19:42:27 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DRAWER_SHORT" id="D839A70A-8A2B-E0D9-897E-C93BDE3C676D">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-06 13:27:30 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DRAWER_DESC" id="18374020-991C-46CE-6D48-5069276C8C0B">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-06 13:27:51 UTC</createdTime>
+<commentInRDBMS>Longer description of the container.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="4EEA0B92-BFE7-B82C-C3BD-11A60AA98AB7">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:33:35 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="8C664D6B-9F52-6E54-16FC-3999513F5C86">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 18:16:26 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F24209A-8C18-F9B1-24D9-5B40998E723A" name="DRAWER_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-29 19:42:27 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A8A7F72-85E6-1062-35DA-FDBF5AE10482"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA329C8F-48FA-8C29-392F-4451C02C3E6D" name="DRAWER__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-06 13:28:08 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D839A70A-8A2B-E0D9-897E-C93BDE3C676D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4324BEBB-38E4-A01D-8D60-5550DEDED701" name="DRAWER__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 17:37:48 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D839A70A-8A2B-E0D9-897E-C93BDE3C676D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

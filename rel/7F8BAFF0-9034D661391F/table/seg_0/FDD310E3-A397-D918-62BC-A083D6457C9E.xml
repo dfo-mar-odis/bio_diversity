@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDD310E3-A397-D918-62BC-A083D6457C9E" name="ROLECODE">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:15:13 UTC</createdTime>
+<commentInRDBMS>Table that contains the descriptions of the various possible roles or tasks which a team member has.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ROLE_ID" id="0AF18671-F942-B3A4-9704-1CC28514772A">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:15:48 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLE_SHORT" id="A590CFD9-5440-4FB4-BBD2-262864DD0A0F">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:16:19 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLE_DESC" id="B96F0948-7A72-E7D8-8DE8-3D0433CCDFB9">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:16:48 UTC</createdTime>
+<commentInRDBMS>Long description of the role.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="478D6B9D-B99E-97FC-D905-91041AD69208">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 15:24:04 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="A7B11A42-0080-2DF9-5346-942A45958E2D">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:45:41 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A5DDA91-7095-3AD0-427F-4F1BDB78A8E8" name="ROLECODE_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-06 12:15:48 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AF18671-F942-B3A4-9704-1CC28514772A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="651C7932-35F7-DFD2-8258-74FC17A27F54" name="ROLECODE__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:45:45 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A590CFD9-5440-4FB4-BBD2-262864DD0A0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E63B799-81F3-DD3B-3821-6C33B6D068BD" name="ROLECODE__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 16:48:23 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A590CFD9-5440-4FB4-BBD2-262864DD0A0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

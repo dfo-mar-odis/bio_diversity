@@ -1,0 +1,372 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66C4D6E6-8434-20E3-205D-0D0C3EF77218" name="LOCATION">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:03:07 UTC</createdTime>
+<comment>The locations table is used to house and describe vaiour possible locations within a facility.</comment>
+<commentInRDBMS>Table that houses the information that describes where the event took place. An event may have multiple locations associated with it, for example releases may be  in various locales. If the location is a container which houses a fish or group of them the ContainersXRef table will assist in identifying the specific container.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOCATION_ID" id="7AC7973E-1760-A64D-9F45-6D8ED9890372">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:03:35 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENT_ID" id="91857873-C24E-A0CB-9EAF-A2E46A465476">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 14:29:24 UTC</createdTime>
+<commentInRDBMS>Links to the Events table for the information for the work performed at this location.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>45</dataTypePrecision>
+<ownDataTypeParameters>,45,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76D85ED6-1912-7AF9-24B3-BE3D2B99F205" referredColumn="14A37245-A5F9-DDA5-5850-BE9A795B7237"/>
+</associations>
+</Column>
+<Column name="LOC_ID" id="EA53386D-F6D3-E779-2ACB-AD6AE7EAB176">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 14:26:33 UTC</createdTime>
+<commentInRDBMS>Links to the LocationCodes table for the description of the type of location.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="477D9D40-BACF-B52E-E275-50C199644022" referredColumn="07FCDC0F-CF69-A94F-EE9E-A8B4C5992B7C"/>
+</associations>
+</Column>
+<Column name="RIVER_ID" id="F20778EE-787F-DCDF-DC72-33F1684BCB94">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 15:00:12 UTC</createdTime>
+<commentInRDBMS>Links to the RiverCodes table for the description of the river system.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E08C4B35-9AF9-6B5C-22F9-E8662C987F0F" referredColumn="8BB0A7B9-9AF8-0F21-94D5-10FBD635D508"/>
+</associations>
+</Column>
+<Column name="TRIB_ID" id="C62DA2AE-241D-CC27-BFA9-D01CD0FE0F50">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-24 15:16:03 UTC</createdTime>
+<commentInRDBMS>Links to the Tributaries table for information on the tributary.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7EC899CC-0A5E-9360-8F03-E40CF68F0C0F" referredColumn="3AA7B644-F3AF-7A6E-9022-71B636C623C1"/>
+</associations>
+</Column>
+<Column name="SUBRIVER_ID" id="EBC5EEDC-DFCD-2CD4-DC18-2CA1347539C4">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 15:00:51 UTC</createdTime>
+<commentInRDBMS>Links to the SubRiverCodes table for information on the subriver that the work was done on.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55FDAFF9-E5DD-BEA8-A5B3-CFFE2EAEDEF5" referredColumn="08001D03-20EE-5D7D-3335-A4EDAAAAC1E3"/>
+</associations>
+</Column>
+<Column name="REL_SITE_ID" id="EDDF9D5E-3E08-3E11-2A64-BFD19464F270">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 19:10:13 UTC</createdTime>
+<commentInRDBMS>Links to the ReleaseSiteCodes table for information on the release site.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6728508C-A51C-11E3-0672-175B451F376E" referredColumn="606FB4E5-4EC0-AE1C-55E6-FE8E8E58269C"/>
+</associations>
+</Column>
+<Column name="LATITUDE" id="D4270BCB-6BC0-47D2-65B8-4EEC3AC7C5BA">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 15:01:41 UTC</createdTime>
+<commentInRDBMS>Latitude of the location in decimal degrees.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,7,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUDE" id="31507DF6-7370-6E08-A3EB-503668A70441">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 15:02:12 UTC</createdTime>
+<commentInRDBMS>The longitude for the work in decimal degrees.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,8,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION_DATE" id="926574E3-B65B-17D9-5F47-7A9D0F662536">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:00:28 UTC</createdTime>
+<commentInRDBMS>The date at which the work was performed at the location populated if the event takes place over multiple days..</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION_TIME" id="4971D4C3-A5BC-EC6F-4A23-A97988FBA9EF">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 18:00:47 UTC</createdTime>
+<commentInRDBMS>The time of the event at this location, valid entires are 1 to 2400. Time is local time.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="7FE55215-1C99-B270-859E-83ED54591C5A">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 14:57:58 UTC</createdTime>
+<commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="BE2250AC-309C-0651-C704-3958265AE26B">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 16:50:47 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="8065765B-19CC-D302-2150-5F716C10545A">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-03-05 17:51:14 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9678741F-40B2-BBBC-4659-525122D4A389" name="LOCATION_PK">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-12 18:03:35 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AC7973E-1760-A64D-9F45-6D8ED9890372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41006799-4134-F59C-8295-3C20397565DB" name="LOCATION__UN">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-23 12:59:28 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91857873-C24E-A0CB-9EAF-A2E46A465476"/>
+<colUsage columnID="EA53386D-F6D3-E779-2ACB-AD6AE7EAB176"/>
+<colUsage columnID="F20778EE-787F-DCDF-DC72-33F1684BCB94"/>
+<colUsage columnID="C62DA2AE-241D-CC27-BFA9-D01CD0FE0F50"/>
+<colUsage columnID="EBC5EEDC-DFCD-2CD4-DC18-2CA1347539C4"/>
+<colUsage columnID="EDDF9D5E-3E08-3E11-2A64-BFD19464F270"/>
+<colUsage columnID="D4270BCB-6BC0-47D2-65B8-4EEC3AC7C5BA"/>
+<colUsage columnID="31507DF6-7370-6E08-A3EB-503668A70441"/>
+<colUsage columnID="926574E3-B65B-17D9-5F47-7A9D0F662536"/>
+<colUsage columnID="4971D4C3-A5BC-EC6F-4A23-A97988FBA9EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38F2B3A3-7322-535B-58DE-5332C614039C" name="LOCATION__IDX">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-10 16:58:29 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91857873-C24E-A0CB-9EAF-A2E46A465476"/>
+<colUsage columnID="EA53386D-F6D3-E779-2ACB-AD6AE7EAB176"/>
+<colUsage columnID="F20778EE-787F-DCDF-DC72-33F1684BCB94"/>
+<colUsage columnID="C62DA2AE-241D-CC27-BFA9-D01CD0FE0F50"/>
+<colUsage columnID="EBC5EEDC-DFCD-2CD4-DC18-2CA1347539C4"/>
+<colUsage columnID="EDDF9D5E-3E08-3E11-2A64-BFD19464F270"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51854D7D-0ABF-5A5C-12E8-D46377B3D69F" name="LOCATION__IDXv1">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:09:58 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91857873-C24E-A0CB-9EAF-A2E46A465476"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37589E93-5489-86FA-ED34-139E8115F6BD" name="LOCATION__IDXv2">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:09:58 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA53386D-F6D3-E779-2ACB-AD6AE7EAB176"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB5F927B-3C20-2368-870C-165E0FD8C11D" name="LOCATION__IDXv3">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:09:58 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F20778EE-787F-DCDF-DC72-33F1684BCB94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4065133-BDA1-8535-1978-A52114D35500" name="LOCATION__IDXv4">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:09:58 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C62DA2AE-241D-CC27-BFA9-D01CD0FE0F50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="268D27E2-0D4E-50FC-3312-E56E86F991C9" name="LOCATION__IDXv5">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:09:58 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBC5EEDC-DFCD-2CD4-DC18-2CA1347539C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4C50BD9-3AC9-8558-0463-BE6112B65679" name="LOCATION__IDXv6">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-13 18:09:58 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDDF9D5E-3E08-3E11-2A64-BFD19464F270"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D587ED59-4C0D-74E5-E1FA-FF749CB6C996" name="LOCATION_LOCCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2019-12-31 14:36:50 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA53386D-F6D3-E779-2ACB-AD6AE7EAB176"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF70544B-EFAA-4CC8-D92A-39A1CCB84C1A" name="LOCATION_RIVERCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:23:06 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F20778EE-787F-DCDF-DC72-33F1684BCB94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E1BC92B-1D2D-AB15-CAC1-B0C0F0663092" name="LOCATION_SUBRIVERCODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-02 17:23:27 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBC5EEDC-DFCD-2CD4-DC18-2CA1347539C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1D55416-BB2D-9F04-E6BE-1C000B5FFFF6" name="LOCATION_EVENT_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-09 14:29:24 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91857873-C24E-A0CB-9EAF-A2E46A465476"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8C10330-DFA0-D0DC-0454-A822EB3C2B7C" name="LOCATION_RELEASESITECODE_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-13 19:18:56 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDDF9D5E-3E08-3E11-2A64-BFD19464F270"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBBF9C44-7604-3369-09EC-1C93034FA581" name="LOCATION_TRIBUTARY_FK">
+<createdBy>BondS</createdBy>
+<createdTime>2020-01-24 15:16:33 UTC</createdTime>
+<ownerDesignName>BDF_Aug</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C62DA2AE-241D-CC27-BFA9-D01CD0FE0F50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="LOCATION_CK_1" directorySegmentName="seg_2" id="2762EE14-CFB9-3B91-0A80-929D12CDCF6C">
+<createdBy>BondS</createdBy>
+<createdTime>2020-02-12 15:45:18 UTC</createdTime>
+<ownerDesignName>BDF_Feb4</ownerDesignName>
+<rule>River_ID IS NOT NULL OR Trib_ID IS NOT NULL OR SubRiver_ID IS NOT NULL</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
