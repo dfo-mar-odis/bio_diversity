@@ -2,8 +2,8 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="583F9E3E-72BF-5365-2837-5E40B3CC589D" name="FACILITYCODE">
 <createdBy>BondS</createdBy>
 <createdTime>2019-12-12 17:08:47 UTC</createdTime>
-<commentInRDBMS>Table used house the information on the facilities.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<commentInRDBMS><![CDATA[Table used house the information on the facilities.]]></commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <ordsAlias>table_1</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -12,8 +12,8 @@
 <Column name="FAC_ID" id="1F95A9AC-147C-5382-C09C-B1CAC69EB4CC">
 <createdBy>BondS</createdBy>
 <createdTime>2019-12-12 17:11:16 UTC</createdTime>
-<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<commentInRDBMS><![CDATA[System generated primary key for the table.]]></commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -24,8 +24,8 @@
 <Column name="FAC_SHORT" id="3344683C-9A35-2D50-DBA8-3F61B8C72704">
 <createdBy>BondS</createdBy>
 <createdTime>2019-12-12 17:11:16 UTC</createdTime>
-<commentInRDBMS>Unigue, short description.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<commentInRDBMS><![CDATA[Unigue, short description.]]></commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -36,8 +36,8 @@
 <Column name="FAC_DESC" id="743B7402-C953-76C0-7098-BFFC36F8776F">
 <createdBy>BondS</createdBy>
 <createdTime>2019-12-12 17:11:16 UTC</createdTime>
-<commentInRDBMS>Long name of the facility</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<commentInRDBMS><![CDATA[Long name of the facility]]></commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -48,8 +48,8 @@
 <Column name="CREATED_BY" id="06B92945-B51A-B69B-8A2F-8AD79E583A00">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 15:22:08 UTC</createdTime>
-<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<commentInRDBMS><![CDATA[The user name of the account which created the record.]]></commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -60,8 +60,8 @@
 <Column name="CREATED_DATE" id="D5D8D5A7-A7DF-96A6-792D-766DEBBAEB12">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:43:39 UTC</createdTime>
-<commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<commentInRDBMS><![CDATA[Date that the record was input.]]></commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -73,7 +73,7 @@
 <ind_PK_UK id="E661E4D3-0DE0-D542-6D73-BC44B8A1C807" name="FACILITYCODE_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2019-12-12 17:11:16 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -84,7 +84,7 @@
 <ind_PK_UK id="02E9D3DD-B28D-BA7D-4B9F-11E686568500" name="FACILITYCODE__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 12:43:56 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -94,7 +94,7 @@
 <ind_PK_UK id="CD5A9AA8-A01D-DBD2-819E-FB2E4B010ADD" name="FACILITYCODE__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 15:38:26 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="3344683C-9A35-2D50-DBA8-3F61B8C72704"/>
