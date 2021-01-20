@@ -12,7 +12,7 @@
 <Column name="FAC_ID" id="1F95A9AC-147C-5382-C09C-B1CAC69EB4CC">
 <createdBy>BondS</createdBy>
 <createdTime>2019-12-12 17:11:16 UTC</createdTime>
-<commentInRDBMS><![CDATA[System generated primary key for the table.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[System generated primary key for the table. ]]></commentInRDBMS>
 <ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
