@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:46:55 UTC</createdTime>
 <commentInRDBMS>Table that describes the subjective, or observational, types of environmental condition being recorded.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_32</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:55:09 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,7 +25,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:55:55 UTC</createdTime>
 <commentInRDBMS>Links to the EnvCodes table to describe the type of information the subjective values are for.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -40,7 +40,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:53:03 UTC</createdTime>
 <commentInRDBMS>Unigue, short description.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -52,7 +52,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:53:31 UTC</createdTime>
 <commentInRDBMS>Long description of the variable.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -64,7 +64,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:30:54 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -76,7 +76,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:02:32 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -88,7 +88,7 @@
 <ind_PK_UK id="D555AFE0-87F4-9978-DD3D-F18992548C22" name="ENVSUBJCODE_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:48:27 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -99,7 +99,7 @@
 <ind_PK_UK id="56972FA0-2A91-4D8B-78D5-B1E3903276C2" name="ENVSUBJCODE__UNv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 14:20:02 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -109,7 +109,7 @@
 <ind_PK_UK id="4E1D5BC8-091E-F63D-C4E9-723E48B222F6" name="ENVSUBJCODE__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:09:32 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="45548D8F-A6F3-107D-C999-ECC889F502B8"/>
@@ -118,7 +118,7 @@
 <ind_PK_UK id="D4123EAF-8A90-7088-7A4F-EA2E247EA29C" name="ENVSUBJCODE__IDXv3">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-02-27 15:12:51 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0DB18D2D-1E22-643F-5F4C-B5DDBFC45036"/>
@@ -128,7 +128,7 @@
 <ind_PK_UK id="2096EC45-F1A3-7E5C-B574-2ED99BB8439B" name="ENVSUBJCODE_ENVCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:56:36 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

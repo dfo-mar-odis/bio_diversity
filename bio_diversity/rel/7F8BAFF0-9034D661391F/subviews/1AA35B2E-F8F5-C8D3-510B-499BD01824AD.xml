@@ -186,7 +186,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9667D253-043A-7D26-B4BA-824296CA6455" otype="Table" vid="0709D931-FF8A-87DD-5816-685E808978D2">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="44" y="452" width="152" height="113"/>
+<bounds x="48" y="375" width="152" height="113"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A0C4D776-3F88-5C80-6793-0950BC2A4677" otype="Table" vid="F79FD94D-2CF1-018A-6140-875DA2277E7D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -470,9 +470,9 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="196" y="508"/>
-<point x="270" y="508"/>
-<point x="270" y="513"/>
+<point x="200" y="431"/>
+<point x="272" y="431"/>
+<point x="272" y="513"/>
 <point x="345" y="513"/>
 </points>
 </Connector>
@@ -591,8 +591,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="830" y="1649"/>
-<point x="630" y="1649"/>
+<point x="830" y="1669"/>
+<point x="630" y="1669"/>
 <point x="630" y="1703"/>
 <point x="436" y="1703"/>
 </points>
@@ -661,6 +661,17 @@
 <point x="1514" y="66"/>
 <point x="1514" y="115"/>
 <point x="1667" y="115"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="38F000F4-174B-B983-90B4-96D781EBACE1" otype="FKIndexAssociation" vid_source="3A6962A1-F484-0C0B-69FC-870B58E4D623" vid_target="EC0F3710-AD60-51A5-14E9-19AB691D2735">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="382" y="804"/>
+<point x="382" y="519"/>
+<point x="324" y="519"/>
+<point x="324" y="334"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3BF61AA3-E523-EBB0-8E2E-13A941D5FE48" otype="FKIndexAssociation" vid_source="7C87FF9A-CAFC-F4DC-3611-5C8F87A69DD8" vid_target="6B25A75B-FCFD-1325-FB54-D04388F69DD1">
@@ -921,7 +932,7 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="372" y="804"/>
+<point x="362" y="804"/>
 <point x="372" y="661"/>
 <point x="443" y="661"/>
 <point x="443" y="629"/>
@@ -1229,9 +1240,9 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="120" y="565"/>
-<point x="120" y="605"/>
-<point x="109" y="605"/>
+<point x="124" y="488"/>
+<point x="124" y="566"/>
+<point x="109" y="566"/>
 <point x="109" y="645"/>
 </points>
 </Connector>
@@ -1804,8 +1815,8 @@
 <points>
 <point x="830" y="1689"/>
 <point x="651" y="1689"/>
-<point x="651" y="1351"/>
-<point x="504" y="1351"/>
+<point x="651" y="1391"/>
+<point x="504" y="1391"/>
 </points>
 </Connector>
 </connectors>

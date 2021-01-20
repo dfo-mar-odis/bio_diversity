@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 14:27:26 UTC</createdTime>
 <commentInRDBMS>Table that houses the descriptions of units of measure used throughout the database.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_48</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 14:28:09 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,7 +25,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 14:28:09 UTC</createdTime>
 <commentInRDBMS>Unigue, short description.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -37,7 +37,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 14:28:36 UTC</createdTime>
 <commentInRDBMS>Long description of the unit of measure.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -49,7 +49,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:19:42 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -61,7 +61,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:05:50 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -73,7 +73,7 @@
 <ind_PK_UK id="7CF1AF36-7233-C957-13CA-E38CE4B27CC0" name="UNITCODE_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 14:28:09 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -84,7 +84,7 @@
 <ind_PK_UK id="5D3D61EA-A112-819B-5AE0-08FF75315030" name="UNITCODE__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 12:59:48 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -94,7 +94,7 @@
 <ind_PK_UK id="BEB36D10-30F9-E6BE-65D2-C53A51526699" name="UNITCODE__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:12:18 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B6F0E775-8BBE-95F4-344D-E7F36ABECAE2"/>

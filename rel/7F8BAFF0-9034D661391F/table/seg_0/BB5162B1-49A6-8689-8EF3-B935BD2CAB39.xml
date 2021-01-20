@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:13:17 UTC</createdTime>
 <commentInRDBMS>Table that houses the information for a specific group of animals, including the original group which a new group originates from.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_30</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 14:16:24 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,7 +25,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 14:01:32 UTC</createdTime>
 <commentInRDBMS>The ID for the group from which this subgroup originated. Used to maintain the full history of groups and ultimately the individuals. A recursive foreign key which links back to the Groups table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -41,7 +41,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:38:01 UTC</createdTime>
 <commentInRDBMS>Links to the SpeciesCodes table to describe the species of the group. Currently defaulted to Atlantic Salmon.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -56,7 +56,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 17:30:36 UTC</createdTime>
 <commentInRDBMS>Links to the StockCodes table to identify the stock that this group is from.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -71,7 +71,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-14 18:55:42 UTC</createdTime>
 <commentInRDBMS>Links to the Collections table to describe what collection the group is made up of.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -87,7 +87,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 17:58:21 UTC</createdTime>
 <commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -99,7 +99,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 14:56:33 UTC</createdTime>
 <commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -112,7 +112,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:19:21 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -124,7 +124,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:06:24 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -136,7 +136,7 @@
 <ind_PK_UK id="7281FFD9-797F-AE49-6FFA-CB17126F93D5" name="GROUP_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 15:31:11 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -147,7 +147,7 @@
 <ind_PK_UK id="803C70A4-603C-8CFE-744C-552ED2115061" name="GROUP__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 13:22:07 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -158,7 +158,7 @@
 <ind_PK_UK id="D52A2388-ED27-5A53-D113-DEC4D19B13E7" name="GROUP__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:05:06 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5A7B84C9-BF91-EFDE-D8C1-1CCE476E388F"/>
@@ -169,7 +169,7 @@
 <ind_PK_UK id="36CA6D7C-8E66-82E9-026E-653B70C4F4A6" name="GROUP__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:05:12 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="67A137E1-64EE-B2AE-E543-4B0DDCB745CA"/>
@@ -178,7 +178,7 @@
 <ind_PK_UK id="EAECC245-490A-8CE0-65A9-FA620A748D6D" name="GROUP__IDXv2">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:05:17 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8C49AE4C-6B24-3ABF-D4D1-E00AA07A82C9"/>
@@ -187,7 +187,7 @@
 <ind_PK_UK id="19B9ADE3-D4C9-A014-EEE8-DE711C8B7445" name="GROUP__IDXv3">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:45:38 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5A7B84C9-BF91-EFDE-D8C1-1CCE476E388F"/>
@@ -196,7 +196,7 @@
 <ind_PK_UK id="62FD16AA-5DEA-FBD6-5C68-B518C7A2353D" name="GROUP__IDXv4">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:45:38 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7C65FD47-656A-9849-A064-B7E2422BDD49"/>
@@ -205,7 +205,7 @@
 <ind_PK_UK id="18C6160D-72DA-306A-17EE-3D5DC6807F0C" name="GROUP__IDXv5">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:45:38 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C4232EE3-9AA3-8E1B-2BC8-7C3A361A002C"/>
@@ -214,7 +214,7 @@
 <ind_PK_UK id="476F9FDF-F07E-F733-843D-6FD08B1C1A3D" name="GROUP_SPECIESCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:38:01 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -224,7 +224,7 @@
 <ind_PK_UK id="A381FB93-68F8-8CC1-AF8B-F87EC82729DE" name="GROUP_STOCKCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 17:30:59 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -234,7 +234,7 @@
 <ind_PK_UK id="ECE5F6A5-1CF4-2A1A-9413-85A3CA700A59" name="GROUP_COLLECTION_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 13:01:57 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -244,7 +244,7 @@
 <ind_PK_UK id="DBA07F5B-2E24-771C-FF72-6D589234320A" name="GROUP_GROUP_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-06 16:05:05 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

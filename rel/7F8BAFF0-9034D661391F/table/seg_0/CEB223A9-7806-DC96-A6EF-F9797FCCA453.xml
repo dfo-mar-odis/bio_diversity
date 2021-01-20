@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-24 15:07:35 UTC</createdTime>
 <commentInRDBMS>Table which houses the information on a tributary.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_62</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-24 15:08:42 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -24,7 +24,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-24 15:08:42 UTC</createdTime>
 <commentInRDBMS>Links to the description of the river system.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -39,7 +39,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-24 15:10:15 UTC</createdTime>
 <commentInRDBMS>Unigue, short description.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -51,7 +51,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-24 15:11:10 UTC</createdTime>
 <commentInRDBMS>Long description of the tributary.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -63,7 +63,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 16:52:15 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -75,7 +75,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:01:51 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -87,7 +87,7 @@
 <ind_PK_UK id="9EEEF03C-9773-A247-ECF6-5A8694F244DB" name="TRIBUTARY_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-24 15:08:42 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -98,7 +98,7 @@
 <ind_PK_UK id="6B84C94C-C7DC-7912-337C-7AD67690FD90" name="TRIBUTARY__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 13:52:43 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -108,7 +108,7 @@
 <ind_PK_UK id="2A80720C-90F2-EB2E-7680-CEAB28E61495" name="TRIBUTARY__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 16:56:32 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7FA1B2F4-2E06-2453-D581-1BB0BB293B67"/>
@@ -117,7 +117,7 @@
 <ind_PK_UK id="CFEA07ED-17EA-35BE-7BB2-342AA4191614" name="TRIBUTARY__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 16:56:38 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="CFEB5058-CA58-F63D-41D8-5ADD7EB9325B"/>
@@ -126,7 +126,7 @@
 <ind_PK_UK id="C68115C6-1FD3-0B20-766B-5BF242EAC7C9" name="TRIBUTARY_RIVERCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-24 15:09:12 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

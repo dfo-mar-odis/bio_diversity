@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 16:09:03 UTC</createdTime>
 <commentInRDBMS>Table that houses the information describing the subjective, or observational, information collected during a spawning.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_52</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 16:09:56 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -24,7 +24,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 16:10:25 UTC</createdTime>
 <commentInRDBMS>Links to the SpawnDetCodes table to describe the type of observation being recorded.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -38,7 +38,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 16:14:12 UTC</createdTime>
 <commentInRDBMS>Unigue, short description.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -50,7 +50,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 16:14:37 UTC</createdTime>
 <commentInRDBMS>Long description of the observation made.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -62,7 +62,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 16:45:06 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -74,7 +74,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:48:11 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -86,7 +86,7 @@
 <ind_PK_UK id="E4C9DD78-E1FB-B7D3-9197-F9DEC1F326CD" name="SPAWNDETSUBJCODE_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 16:09:56 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -97,7 +97,7 @@
 <ind_PK_UK id="7C53809A-0E3A-5149-37B6-33768F01F5D5" name="SPAWNDETSUBJCODE__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-20 19:09:35 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -107,7 +107,7 @@
 <ind_PK_UK id="4D5C2F7E-F33F-98C3-243F-5D0EFF53F049" name="SPAWNDETSUBJCODE__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:02:11 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="874B8F5D-11C9-DD07-768A-6ECD046A70DE"/>
@@ -117,7 +117,7 @@
 <ind_PK_UK id="6F59B8EF-69FE-E5DC-30BE-2AB83C71892D" name="SPAWNDETSUBJCODE__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:15:17 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="874B8F5D-11C9-DD07-768A-6ECD046A70DE"/>
@@ -126,7 +126,7 @@
 <ind_PK_UK id="71402E3A-73C1-70CF-B15B-8F4A523D6D07" name="SPAWNDETSUBJCODE__IDXv2">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:15:17 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="3E579278-8C64-EA13-4C64-CE998D7A1966"/>
@@ -135,7 +135,7 @@
 <ind_PK_UK id="D82524FC-D1DC-7B28-7D2B-76F37B162AB8" name="SPAWNDETSUBJ_SPAWNDET_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 16:19:04 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

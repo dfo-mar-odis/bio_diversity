@@ -63,8 +63,8 @@
 <points>
 <point x="383" y="626"/>
 <point x="331" y="626"/>
-<point x="331" y="538"/>
-<point x="243" y="538"/>
+<point x="331" y="548"/>
+<point x="243" y="548"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="2D831399-E0A0-A6EB-A581-11BA9F9BA279" otype="FKIndexAssociation" vid_source="D25472DD-0C49-941B-7922-FD4A31CB3140" vid_target="E8E1471A-C31B-ADFB-6602-E4766A6B0914">
@@ -73,9 +73,9 @@
 <lineWidth>1</lineWidth>
 <points>
 <point x="1231" y="395"/>
-<point x="1282" y="395"/>
-<point x="1282" y="623"/>
-<point x="1354" y="623"/>
+<point x="1292" y="395"/>
+<point x="1292" y="603"/>
+<point x="1354" y="603"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="5A33E0BC-EF99-E097-7B19-1F2B26824DAD" otype="FKIndexAssociation" vid_source="42CADCFE-CE66-B840-7E18-7F5F6670979E" vid_target="E8E1471A-C31B-ADFB-6602-E4766A6B0914">
@@ -95,8 +95,8 @@
 <lineWidth>1</lineWidth>
 <points>
 <point x="677" y="126"/>
-<point x="479" y="136"/>
-<point x="479" y="206"/>
+<point x="489" y="126"/>
+<point x="489" y="206"/>
 <point x="311" y="206"/>
 </points>
 </Connector>
@@ -105,10 +105,10 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="589" y="636"/>
-<point x="961" y="636"/>
-<point x="961" y="603"/>
-<point x="1354" y="603"/>
+<point x="589" y="616"/>
+<point x="961" y="616"/>
+<point x="961" y="623"/>
+<point x="1354" y="623"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="90919C3E-2C36-6806-1B62-3A1CA0B6C6A3" otype="FKIndexAssociation" vid_source="3E625FB2-BDAE-AE3A-0BE3-C344295EB731" vid_target="58A5BE86-1D14-E21C-EAD3-259515630044">
@@ -160,10 +160,10 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="981" y="405"/>
-<point x="797" y="405"/>
-<point x="797" y="616"/>
-<point x="589" y="616"/>
+<point x="981" y="395"/>
+<point x="797" y="395"/>
+<point x="797" y="636"/>
+<point x="589" y="636"/>
 </points>
 </Connector>
 </connectors>

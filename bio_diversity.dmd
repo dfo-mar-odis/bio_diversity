@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BDF_Aug" id="54CC6515-16E5-F0D6-C649-5ADB49B0850F" version="3.5">
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BDF" id="54CC6515-16E5-F0D6-C649-5ADB49B0850F" version="3.5">
 <createdBy>BondS</createdBy>
 <createdTime>2019-12-12 17:06:37 UTC</createdTime>
 <ownerDesignName>BDF_2</ownerDesignName>

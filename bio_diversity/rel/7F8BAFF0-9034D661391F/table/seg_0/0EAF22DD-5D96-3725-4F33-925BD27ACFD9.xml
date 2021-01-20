@@ -3,7 +3,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:02:21 UTC</createdTime>
 <commentInRDBMS>Table used to track possible mutiple sires involved in the pairing.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_76</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:03:34 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -24,7 +24,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:05:20 UTC</createdTime>
 <commentInRDBMS>Links to the PriorityCode table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -38,7 +38,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:13:02 UTC</createdTime>
 <commentInRDBMS>Links to the Pair table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -52,12 +52,12 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:14:41 UTC</createdTime>
 <commentInRDBMS>The unique fish ID of the sire, links to the Individual table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="2D831399-E0A0-A6EB-A581-11BA9F9BA279" referredColumn="517740E9-305C-BE9C-5F08-130FAFD3FB84"/>
@@ -67,7 +67,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:18:54 UTC</createdTime>
 <commentInRDBMS>Number indicating whether the sire recorded is first, second, third, etc. choice for the spawning.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -79,7 +79,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:26:06 UTC</createdTime>
 <commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -92,7 +92,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:26:46 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -104,7 +104,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:27:08 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -116,7 +116,7 @@
 <ind_PK_UK id="D3678D74-5C19-3AC0-AA20-FDF7A0C2A900" name="SIRE_PK">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:03:34 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -127,7 +127,7 @@
 <ind_PK_UK id="F8C1FDCA-7ACF-C9C9-266C-CA2BE740EBDA" name="SIRE__IDX">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:55:13 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B3AFBCAE-740E-E098-0BD5-A0E50C9478E2"/>
@@ -136,7 +136,7 @@
 <ind_PK_UK id="03E53EED-0CD6-2C0F-D164-827DC53AF288" name="SIRE__IDXv1">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:55:13 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BBA37150-028E-1AE6-82E0-B0654984FA20"/>
@@ -145,7 +145,7 @@
 <ind_PK_UK id="4C94FAB9-5A38-B671-A26E-9EE5F83AB600" name="SIRE__IDXv3">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:55:13 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2E656679-1EDB-604F-FF5D-822114B59C25"/>
@@ -154,7 +154,7 @@
 <ind_PK_UK id="F2D635E1-40EE-D790-B97D-3E8C458F9746" name="SIRE__IDXv4">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:55:13 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="080EDBE1-A1A2-F6BA-88B4-8182ABC396D4"/>
@@ -163,7 +163,7 @@
 <ind_PK_UK id="2827BAC2-38AE-2B32-06D0-8267F72AB0F0" name="SIRE_PRIORITYCODE_FK">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:07:00 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -173,7 +173,7 @@
 <ind_PK_UK id="CC782AD9-8640-E7DD-CD06-7F01D93A2348" name="SIRE_PAIRING_FK">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:13:38 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -183,7 +183,7 @@
 <ind_PK_UK id="2E9E3B3C-F515-1EE4-C677-0AF634F7548C" name="SIRE_INDIVIDUAL_FK">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-09-07 14:17:42 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

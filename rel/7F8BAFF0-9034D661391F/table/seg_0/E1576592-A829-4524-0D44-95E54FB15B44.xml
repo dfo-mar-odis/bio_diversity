@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 19:37:38 UTC</createdTime>
 <commentInRDBMS>Table containing information on various health treatments for an individual animal.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_57</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 19:38:21 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,7 +25,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 19:40:05 UTC</createdTime>
 <commentInRDBMS>Links to the IndTreatCodes table which describes the type of treament performed.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -40,7 +40,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 19:41:59 UTC</createdTime>
 <commentInRDBMS>The lot number of the product used.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -52,7 +52,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 19:46:28 UTC</createdTime>
 <commentInRDBMS>The dosage used on the individual in ????? what unit??</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -65,7 +65,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 19:48:31 UTC</createdTime>
 <commentInRDBMS>The start time of the treatment if required, valid entires are 1 to 2400. Time is in local time.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -85,7 +85,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 19:51:33 UTC</createdTime>
 <commentInRDBMS>The end time for the treatment, local time. Valid entries are 1 to 2400.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -98,7 +98,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 14:52:45 UTC</createdTime>
 <commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -111,7 +111,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 16:14:38 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -123,7 +123,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:46:09 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -135,7 +135,7 @@
 <ind_PK_UK id="C8EC9605-9BC7-9660-E9A6-7DBF4B53EF26" name="INDTREATMENT_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 19:38:21 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -146,7 +146,7 @@
 <ind_PK_UK id="D286C90B-EAF9-C357-6D1E-A612D9874E65" name="INDTREATMENT__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 12:58:21 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -157,7 +157,7 @@
 <ind_PK_UK id="5D2690F2-39E9-D6D1-7924-674F60948FEC" name="INDTREATMENT__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 16:59:01 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="754111C7-E826-E6CF-078B-C6F8CD13227D"/>
@@ -166,7 +166,7 @@
 <ind_PK_UK id="D1F1B4D0-2045-20F0-9B88-4E576E7D37D3" name="INDTREATMENT__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 16:59:10 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9DAE6927-5340-E2E5-DEBB-E7D2096745EB"/>
@@ -175,7 +175,7 @@
 <ind_PK_UK id="B7951CFD-3AB0-FB02-1197-3AE04FE9BB02" name="INDTREATMENT_INDTREAT_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-11 16:18:51 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

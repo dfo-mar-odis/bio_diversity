@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="38F000F4-174B-B983-90B4-96D781EBACE1" containerWithKeyObject="3B9F19D9-95A5-DD34-DDDE-D767B640F94E" localFKIndex="8B410FE6-D0C3-23F6-F1B3-F1027F8C4297" name="PROTOCOL_EVENTCODE_FK">
+<createdBy>BondSA</createdBy>
+<createdTime>2020-12-11 15:55:34 UTC</createdTime>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<referredTableLongName>EVENTCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F4B62713-F588-62E5-2A3C-35657D825F04</referredTableID>
+<keyObject>0A73A11C-A66B-11D6-0CFE-3546E627CD35</keyObject>
+<referredKeyID>0A73A11C-A66B-11D6-0CFE-3546E627CD35</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>EVT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

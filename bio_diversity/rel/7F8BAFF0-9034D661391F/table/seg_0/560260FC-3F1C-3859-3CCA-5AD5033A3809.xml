@@ -3,7 +3,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 13:26:24 UTC</createdTime>
 <commentInRDBMS>Table that houses the priority codes and descriptions.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_74</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 13:27:25 UTC</createdTime>
 <commentInRDBMS>System generated primary key.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -24,7 +24,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 13:28:03 UTC</createdTime>
 <commentInRDBMS>Short descriptor for the priority.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -36,7 +36,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 13:28:47 UTC</createdTime>
 <commentInRDBMS>Long description of the priority.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -48,7 +48,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 16:17:46 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -60,7 +60,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:47:02 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -72,7 +72,7 @@
 <ind_PK_UK id="5EF8FF90-C718-12BF-FF87-2A2E4761A2B4" name="PRIORITYCODE_PK">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 13:27:25 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -83,7 +83,7 @@
 <ind_PK_UK id="505B9CED-E134-A0A8-08F6-E12F6F0C9744" name="PRIORITYCODE__UN">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 13:29:04 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -93,7 +93,7 @@
 <ind_PK_UK id="400B7747-91DA-48DE-C824-3400D22A42FB" name="PRIORITYCODE__IDX">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 13:29:20 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="422E5F4C-441A-9A07-DCB9-73C695A0B369"/>

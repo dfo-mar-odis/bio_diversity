@@ -4,7 +4,7 @@
 <createdTime>2020-02-27 11:42:45 UTC</createdTime>
 <comment>Contains the information on the method, for example manual or automated, on how the feed is delivered.</comment>
 <commentInRDBMS>Table that houses the fedding method codes and descriptions.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_73</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -14,7 +14,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-02-27 11:44:47 UTC</createdTime>
 <commentInRDBMS>System generated unique ID.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,7 +25,7 @@
 <Column name="FEEDMETHOD_SHORT" id="88C4EE27-8E8C-5415-77D0-4F6039C59A2B">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-02-27 11:45:34 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -36,7 +36,7 @@
 <Column name="FEEDMETHOD_DESC" id="DCC42C9F-B94F-3DAA-3FD4-1FD903727B7E">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-02-27 11:46:06 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -48,7 +48,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:22:33 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -60,7 +60,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:08:03 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -72,7 +72,7 @@
 <ind_PK_UK id="FB2060B1-2128-D635-148B-3BD61EA6E2E7" name="FEEDMETHOD_PK">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-02-27 11:44:47 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -83,7 +83,7 @@
 <ind_PK_UK id="7663FA33-1125-A19F-2A29-84AE7806D940" name="FEEDMETHOD__UN">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-02-27 11:46:27 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -93,7 +93,7 @@
 <ind_PK_UK id="43C47CD2-AF92-483E-1747-B088E43CDE6A" name="FEEDMETHOD__IDX">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-02-27 13:07:48 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="88C4EE27-8E8C-5415-77D0-4F6039C59A2B"/>

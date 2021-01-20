@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 17:50:26 UTC</createdTime>
 <commentInRDBMS>Table that houses the various details for a tray.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_79</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 17:50:53 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -24,7 +24,7 @@
 <Column name="TRAY_ID" id="46B76B90-B158-DF83-1F14-0075B3BB48CF">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 17:51:08 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -39,7 +39,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 17:51:54 UTC</createdTime>
 <commentInRDBMS>Links to the ContainerDetCodes table to describe the type of detail recorded.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -54,7 +54,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 17:52:09 UTC</createdTime>
 <commentInRDBMS>The value of the measurement if not a subjective observation.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -68,7 +68,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 17:52:28 UTC</createdTime>
 <commentInRDBMS>Links to the ContDetSubjCodes table to describe the observation.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -84,7 +84,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 17:52:50 UTC</createdTime>
 <commentInRDBMS>The date that the detail was recorded, mandatory.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -95,7 +95,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 17:53:05 UTC</createdTime>
 <commentInRDBMS>The last date which the detail is still valid.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -107,7 +107,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 17:53:26 UTC</createdTime>
 <commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -119,7 +119,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 15:10:49 UTC</createdTime>
 <commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -132,7 +132,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:35:48 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -144,7 +144,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:15:05 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -156,7 +156,7 @@
 <ind_PK_UK id="4E25DBEE-A04A-74A4-9932-D89A4877427C" name="TRAYDET_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 17:50:53 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -167,7 +167,7 @@
 <ind_PK_UK id="504C3750-DC91-42FB-DFFA-947118140082" name="TRAYDET__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 19:50:30 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -180,7 +180,7 @@
 <ind_PK_UK id="E57C65AF-CC55-54EC-EE50-8B5665AC0E01" name="TRAYDET__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:40:06 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="46B76B90-B158-DF83-1F14-0075B3BB48CF"/>
@@ -191,7 +191,7 @@
 <ind_PK_UK id="64C492D0-3F5C-F31E-E2B9-3826003D3C56" name="TRAYDET__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:40:12 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="530E5901-512C-C702-B2BD-C62B94F42F17"/>
@@ -200,7 +200,7 @@
 <ind_PK_UK id="E068925A-B3E6-DBAD-695F-14E1B33B3F1A" name="TRAYDET__IDXv2">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:52:16 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="46B76B90-B158-DF83-1F14-0075B3BB48CF"/>
@@ -209,7 +209,7 @@
 <ind_PK_UK id="3503204F-E5EC-FD1D-C097-E2CFE5609353" name="TRAYDET__IDXv3">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:52:16 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="40E87CEE-DFB7-3688-9765-E44EAE4507A5"/>
@@ -218,7 +218,7 @@
 <ind_PK_UK id="AA9C2995-F53C-6625-0CE4-E11DBEBEC4DA" name="TRAYDET__IDXv4">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:52:16 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="46809B61-3A30-F3A7-A708-0A6560912BF4"/>
@@ -227,7 +227,7 @@
 <ind_PK_UK id="EF96B65D-1244-1AA5-5973-35C391A1DE13" name="TRAYDET_TRAY_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 18:30:52 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -237,7 +237,7 @@
 <ind_PK_UK id="3814DA93-CD59-5691-E023-EDCEC8FB233E" name="TRAYDET_CONTAINERDETCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 18:34:35 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -247,7 +247,7 @@
 <ind_PK_UK id="0FFE90E3-2183-95FE-27C1-401ACB618C6F" name="TRAYDET_CONTDETSUBJCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 18:34:49 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

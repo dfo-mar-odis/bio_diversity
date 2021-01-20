@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:16:41 UTC</createdTime>
 <commentInRDBMS>Table that houses the detials on the count performed.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <ordsAlias>table_38</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:18:50 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,7 +25,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:18:50 UTC</createdTime>
 <commentInRDBMS>Links to the Counts table for the detail.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -39,7 +39,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:20:53 UTC</createdTime>
 <commentInRDBMS>Links to the AniDetCodes table to describe the type of measurement.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -54,7 +54,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:22:22 UTC</createdTime>
 <commentInRDBMS>The value of the measurement if not a subjective observation.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -68,7 +68,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:23:54 UTC</createdTime>
 <commentInRDBMS>Links to the AniDetSubjCodes table to describe the subjective measurement.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -84,7 +84,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-06 14:42:42 UTC</createdTime>
 <commentInRDBMS>Links to the QualCOdes table.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -99,7 +99,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 15:03:22 UTC</createdTime>
 <commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -112,7 +112,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:28:05 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -124,7 +124,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:05:16 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -136,7 +136,7 @@
 <ind_PK_UK id="3EC4C2DF-F911-9DFB-D3AC-2C6039369648" name="COUNTDET_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:18:50 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -147,7 +147,7 @@
 <ind_PK_UK id="A1DF460C-4BC7-A08A-1FBA-AEF54163F410" name="COUNTDET__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 13:40:53 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -159,7 +159,7 @@
 <ind_PK_UK id="15793781-BEF3-A3B6-1B24-C9472A8F245E" name="COUNTDET__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:15:41 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="74340DD1-E76F-1F1F-5D15-15D8D8F7EFE6"/>
@@ -170,7 +170,7 @@
 <ind_PK_UK id="AA1086E7-3D69-5961-19ED-05188E56D427" name="COUNTDET__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:15:45 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C14794AE-ACCD-44C0-A249-734E5270F010"/>
@@ -179,7 +179,7 @@
 <ind_PK_UK id="6A5C17C7-AEDC-13BE-4298-C816ACB69D3D" name="COUNTDET__IDXv2">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:01:44 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="74340DD1-E76F-1F1F-5D15-15D8D8F7EFE6"/>
@@ -188,7 +188,7 @@
 <ind_PK_UK id="675C44FF-895A-0A43-AEA2-1A0FB0B3D339" name="COUNTDET__IDXv3">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:01:44 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="67BD77A9-3A6C-63DF-6E2E-BFC5BFFCA610"/>
@@ -197,7 +197,7 @@
 <ind_PK_UK id="A6E75876-E51D-CD4F-F7B8-E9FA432EA141" name="COUNTDET__IDXv4">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:01:44 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="796386B6-A482-9D61-F987-DF60329D4753"/>
@@ -206,7 +206,7 @@
 <ind_PK_UK id="8FD26C8C-BC19-832C-CCAD-07FB85CD8AF9" name="COUNTDET_COUNT_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 13:32:43 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -216,7 +216,7 @@
 <ind_PK_UK id="B8E3B310-B250-FD62-5F09-4111804FF32B" name="COUNTDET_ANIMALDETCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 13:33:41 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -226,7 +226,7 @@
 <ind_PK_UK id="3DAF85D1-7E17-8658-5094-2E021F386DB4" name="COUNTDET_QUALCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-06 14:43:07 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -236,7 +236,7 @@
 <ind_PK_UK id="53BAF639-0C94-5A60-AA70-24E299B7DD7F" name="COUNTDET_ANIDETSUBJCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-06 19:03:55 UTC</createdTime>
-<ownerDesignName>BDF_Aug</ownerDesignName>
+<ownerDesignName>BDF_Dec_2020</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
