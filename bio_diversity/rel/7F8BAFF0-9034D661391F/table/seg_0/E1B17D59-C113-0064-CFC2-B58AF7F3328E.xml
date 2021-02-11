@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:40:58 UTC</createdTime>
 <commentInRDBMS>Table that houses details collected on a group during an event. For example the percentage of the group at a certain life history stage. Throughout the existence of a group, there may be many details collected on that group during different events and at different points in time.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <ordsAlias>table_39</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:42:00 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,7 +25,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 15:16:40 UTC</createdTime>
 <commentInRDBMS>Links to the AniDetailsXRef table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -39,7 +39,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:43:07 UTC</createdTime>
 <commentInRDBMS>Links to the AniDetCodes table to describe the type of measurement.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -54,7 +54,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:45:12 UTC</createdTime>
 <commentInRDBMS>The value of the measurement if not a subjective observation.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -68,7 +68,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:46:27 UTC</createdTime>
 <commentInRDBMS>Links to the AniDetSubjCodes to describe the subjective value.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -84,7 +84,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 18:28:53 UTC</createdTime>
 <commentInRDBMS>Links to the QualCodes table to describe the confidence in the recorded information.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -99,7 +99,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-24 14:16:48 UTC</createdTime>
 <commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -107,11 +107,21 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DETAIL_DATE" id="C529C4EE-4496-1AFB-208E-30098D7C87D9">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-10 19:06:12 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="COMMENTS" id="D5B4DAA8-7719-DB89-7757-1E84E9C54D58">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 14:56:10 UTC</createdTime>
 <commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -124,7 +134,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 16:48:47 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -136,7 +146,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:50:31 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -148,7 +158,7 @@
 <ind_PK_UK id="2D870AAB-2A50-CB04-C31F-28C2A9E3345D" name="GROUPDET_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:42:00 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -159,7 +169,7 @@
 <ind_PK_UK id="AAE98E6A-FFAA-EF55-6062-2D1F68B97A95" name="GROUPDET__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 13:39:31 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -171,7 +181,7 @@
 <ind_PK_UK id="9D8DBD63-FAFC-AF99-F8F6-163B25D46F35" name="GROUPDET__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:05:47 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2751FF77-FBAA-766D-5E0F-D510462740A2"/>
@@ -182,7 +192,7 @@
 <ind_PK_UK id="2FD2EE92-55DD-0E8B-426F-0FBCBF238240" name="GROUPDET__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:05:55 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="82452195-6D30-8BF0-8C76-42D2D1BF7556"/>
@@ -191,7 +201,7 @@
 <ind_PK_UK id="46592FBB-18BA-5231-0093-731350A821CA" name="GROUPDET__IDXv2">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:06:00 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="033147F4-B330-D35E-2DBD-CD7659B15BE1"/>
@@ -200,7 +210,7 @@
 <ind_PK_UK id="14CFA3EF-7DEB-78EF-CDAA-CE8F81BFCBB3" name="GROUPDET__IDXv3">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:44:38 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2751FF77-FBAA-766D-5E0F-D510462740A2"/>
@@ -209,7 +219,7 @@
 <ind_PK_UK id="61C6DF04-66A9-B6CE-02B9-6C7F1F01F3C3" name="GROUPDET__IDXv4">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:44:50 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1CA80D75-D00F-8CAE-DB79-22D2A6122843"/>
@@ -218,7 +228,7 @@
 <ind_PK_UK id="FC2C9A90-411E-15F2-8732-FF7FFA8230EE" name="GROUPDET__IDXv5">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:44:50 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="02997A38-A6C2-2BD7-DE7C-6DC610689A7D"/>
@@ -227,7 +237,7 @@
 <ind_PK_UK id="6E45DBCF-5702-F9F8-20A6-C49A68730251" name="GROUPDET_ANIMALDETCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:48:11 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -237,7 +247,7 @@
 <ind_PK_UK id="C26C5027-F048-A603-F5A4-9B56BF8CB693" name="GROUPDET_QUALCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 18:29:33 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -247,7 +257,7 @@
 <ind_PK_UK id="A85B0553-2577-701A-1D09-AEEE93825832" name="GROUPDET_ANIDETSUBJCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 15:29:10 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -257,7 +267,7 @@
 <ind_PK_UK id="0EC3CB19-B7F0-AA72-AA94-CD528CF7EB7C" name="GROUPDET_ANIDETAILXREF_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 15:17:10 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

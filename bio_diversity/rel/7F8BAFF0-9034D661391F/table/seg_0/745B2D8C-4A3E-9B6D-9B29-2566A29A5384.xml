@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 19:40:37 UTC</createdTime>
 <commentInRDBMS>Table that uniquely identifies the tanks in use in the facilities.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <ordsAlias>table_67</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 19:40:58 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -21,11 +21,25 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="FAC_ID" id="02993774-10E8-755D-5820-FE58254D4F03">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-10 15:52:07 UTC</createdTime>
+<commentInRDBMS>Links to the facility codes table</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="677E8EAD-2508-7C35-D76C-1AD83115B818" referredColumn="1F95A9AC-147C-5382-C09C-B1CAC69EB4CC"/>
+</associations>
+</Column>
 <Column name="TANK_SHORT" id="FC91BD4E-5F33-4B9C-7C31-DAC887827D43">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 16:49:14 UTC</createdTime>
 <commentInRDBMS>Unigue, short description.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -37,7 +51,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-06 13:29:39 UTC</createdTime>
 <commentInRDBMS>Longer description of the container.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -49,7 +63,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:36:10 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -61,7 +75,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:14:18 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -73,7 +87,7 @@
 <ind_PK_UK id="E028E4DD-FDF1-5617-F683-4C9B110F8062" name="TANK_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 19:40:58 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -84,7 +98,7 @@
 <ind_PK_UK id="8A896CD1-F6BF-5159-2559-9118B4CB9C75" name="TANK__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 16:49:49 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -94,10 +108,20 @@
 <ind_PK_UK id="167746E1-BE86-6CAA-0E6F-860B74BDD674" name="TANK__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:38:27 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FC91BD4E-5F33-4B9C-7C31-DAC887827D43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFD4BBE2-CCB7-46D3-4C52-7F596820A873" name="TANK_FACILITYCODE_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-10 15:52:07 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02993774-10E8-755D-5820-FE58254D4F03"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

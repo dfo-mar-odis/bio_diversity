@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 19:31:17 UTC</createdTime>
 <commentInRDBMS>Table that uniquely identifies the troughs in use in the facilities.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <ordsAlias>table_65</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 19:31:53 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -21,11 +21,24 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="FAC_ID" id="E6C14C88-4E57-1BC2-40E4-F1AD8FF60FCA">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-10 15:50:40 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D64B0BC-DDD3-0A72-F5FD-14D90AE4D129" referredColumn="1F95A9AC-147C-5382-C09C-B1CAC69EB4CC"/>
+</associations>
+</Column>
 <Column name="TROUGH_SHORT" id="60F1465E-0CBB-E268-9856-070AE6F2357A">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 12:01:15 UTC</createdTime>
 <commentInRDBMS>Unigue, short description.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -37,7 +50,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 12:01:43 UTC</createdTime>
 <commentInRDBMS>Longer description of the container.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -49,7 +62,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:34:59 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -61,7 +74,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:15:21 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -73,7 +86,7 @@
 <ind_PK_UK id="9F3C8E0E-4172-E4F0-D218-FFC1596DBF12" name="TROUGH_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 19:31:53 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -84,7 +97,7 @@
 <ind_PK_UK id="8ED63C82-334D-77CE-B91E-B329D52D81CC" name="TROUGH__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-30 19:49:05 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -94,10 +107,20 @@
 <ind_PK_UK id="4C0BBBDF-CC14-7601-877A-913C0AF4BABE" name="TROUGH__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:38:14 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="60F1465E-0CBB-E268-9856-070AE6F2357A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B6AB48F-FC23-F4FA-BBA1-CAAF36756BF7" name="TROUGH_FACILITYCODE_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-10 15:50:40 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6C14C88-4E57-1BC2-40E4-F1AD8FF60FCA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

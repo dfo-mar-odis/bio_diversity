@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 17:44:31 UTC</createdTime>
 <commentInRDBMS>Table that uniquely identifies the cups in use in the facilities.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <ordsAlias>table_63</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 17:45:31 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -21,11 +21,25 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="FAC_ID" id="972B3A06-9A60-B6CC-4C1A-F02037F3D45D">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-10 15:52:59 UTC</createdTime>
+<commentInRDBMS>Links to the facility codes table</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E4CD682C-B923-BB2E-00F4-B2ED8AA8E274" referredColumn="1F95A9AC-147C-5382-C09C-B1CAC69EB4CC"/>
+</associations>
+</Column>
 <Column name="CUP_SHORT" id="E0398B07-2F2F-D6EE-8820-A4247FD354FF">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 17:47:08 UTC</createdTime>
 <commentInRDBMS>Unigue, short description.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -37,7 +51,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 15:13:19 UTC</createdTime>
 <commentInRDBMS>Longer description of the cup.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -50,7 +64,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:36:56 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -62,7 +76,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:13:42 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -74,7 +88,7 @@
 <ind_PK_UK id="417EE81F-EF28-1C91-B8DC-C6FC70C360A7" name="CUP_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-29 17:45:31 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -85,7 +99,7 @@
 <ind_PK_UK id="B2D0E412-E85A-14DE-AE02-1E970EA4449B" name="CUP__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-07 15:13:28 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -95,10 +109,20 @@
 <ind_PK_UK id="A374DB7B-9384-2562-6146-BC33FB2DB7C9" name="CUP__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:38:34 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E0398B07-2F2F-D6EE-8820-A4247FD354FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F650AD9-C816-94D7-4D9A-0BFECD428C80" name="CUP_FACILITYCODE_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-10 15:52:59 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="972B3A06-9A60-B6CC-4C1A-F02037F3D45D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
