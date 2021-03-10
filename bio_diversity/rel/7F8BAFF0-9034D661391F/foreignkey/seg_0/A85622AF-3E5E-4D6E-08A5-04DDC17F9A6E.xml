@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A85622AF-3E5E-4D6E-08A5-04DDC17F9A6E" containerWithKeyObject="BB5162B1-49A6-8689-8EF3-B935BD2CAB39" localFKIndex="476F9FDF-F07E-F733-843D-6FD08B1C1A3D" name="GROUP_SPECIESCODE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A85622AF-3E5E-4D6E-08A5-04DDC17F9A6E" containerWithKeyObject="BB5162B1-49A6-8689-8EF3-B935BD2CAB39" localFKIndex="476F9FDF-F07E-F733-843D-6FD08B1C1A3D" name="GROUP_GROUP_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:38:01 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <referredTableLongName>SPECIESCODE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>23138F25-E7CB-EEB9-71D8-B6802FE65349</referredTableID>

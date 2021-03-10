@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:16:00 UTC</createdTime>
 <commentInRDBMS>Table that houses the information for a specific individual.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <ordsAlias>table_31</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:16:34 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,7 +25,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 14:30:33 UTC</createdTime>
 <commentInRDBMS>The group the individual was last part of, if applicable. </commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,7 +40,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:36:15 UTC</createdTime>
 <commentInRDBMS>Links to the SpeciesCodes table. Currently defaulted to Atlantic Salmon.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -55,7 +55,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 17:25:13 UTC</createdTime>
 <commentInRDBMS>Links to the StockCodes table to identify the stock that this individual belongs to.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -66,17 +66,26 @@
 <colAssociation fkAssociation="F94F2F1D-42FA-6DCA-06F7-303CE761194C" referredColumn="0037FBFB-3BD4-E27D-1BF5-5E6C6543B289"/>
 </associations>
 </Column>
+<Column name="YEAR" id="05E5CD26-B3F2-32B8-4616-8413E8727572">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-11 12:50:41 UTC</createdTime>
+<commentInRDBMS>Year the individual was first brought into the system, can be inherited from parent group.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="COLLECTION_ID" id="6EAB62ED-138D-12C0-B616-16BAB9BE20CE">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-14 14:17:02 UTC</createdTime>
 <commentInRDBMS>Links to the Collections table to describe the collection this individual is from.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="EE96765E-C910-600D-9F7E-61FA6EBD381B" referredColumn="2BBCA54C-54D5-8E38-CFA5-49A28583093D"/>
@@ -86,7 +95,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 13:08:49 UTC</createdTime>
 <commentInRDBMS>Unique Fish ID supplied by ABL.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -99,7 +108,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 17:28:18 UTC</createdTime>
 <commentInRDBMS>The PIT tag identifier for this animal.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -112,7 +121,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 14:11:56 UTC</createdTime>
 <commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -124,7 +133,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 14:54:00 UTC</createdTime>
 <commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -137,7 +146,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 16:48:27 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -149,7 +158,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:47:35 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -161,7 +170,7 @@
 <ind_PK_UK id="4C054384-FBCF-5200-DB39-FDF6A6EE85EC" name="INDIVIDUAL_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 12:16:34 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -172,7 +181,7 @@
 <ind_PK_UK id="C42DD445-0574-3FD0-16A8-BB2EA0AAFB5F" name="INDIVIDUAL__UFID_UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 17:07:13 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -182,7 +191,7 @@
 <ind_PK_UK id="6888FB9A-7EC9-CFE7-01F7-0FE5B3D91A45" name="INDIVIDUAL__PIT_UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 17:31:21 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -192,7 +201,7 @@
 <ind_PK_UK id="4EE5B33E-66EC-94F7-1F13-BFA64063B94E" name="INDIVIDUAL__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:01:11 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F4E548EB-B973-0665-41D5-47675F9C1BF9"/>
@@ -204,7 +213,7 @@
 <ind_PK_UK id="B5A4C037-A2D4-4CA2-8E91-A8DB65A68229" name="INDIVIDUAL__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:01:25 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9A9D1AC6-5E5F-4503-8D8B-B6E084A4B72A"/>
@@ -213,7 +222,7 @@
 <ind_PK_UK id="F914F0B5-7C5B-C5F5-E48B-9942EC8C6C21" name="INDIVIDUAL__IDXv2">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:11:06 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F4E548EB-B973-0665-41D5-47675F9C1BF9"/>
@@ -222,7 +231,7 @@
 <ind_PK_UK id="36D69C19-3712-5E55-4310-B90D2F83B5D4" name="INDIVIDUAL__IDXv3">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:11:06 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="36D33F3F-CC3C-0388-B78D-736C627E8EB6"/>
@@ -231,7 +240,7 @@
 <ind_PK_UK id="69A3F76A-E7CD-6AC7-0806-1394FD3B7916" name="INDIVIDUAL__IDXv4">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:11:06 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B45F9314-FA64-7C25-4A83-19C0B4B2EAB2"/>
@@ -240,7 +249,7 @@
 <ind_PK_UK id="EDEF6BA9-9146-9B40-249D-41E783B04FD1" name="INDIVIDUAL__IDXv5">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:11:06 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6EAB62ED-138D-12C0-B616-16BAB9BE20CE"/>
@@ -249,7 +258,7 @@
 <ind_PK_UK id="78C11864-C8B5-5382-B636-94524CA9145F" name="INDIVIDUAL_SPECIESCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-09 18:36:45 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -259,7 +268,7 @@
 <ind_PK_UK id="CE1AAF0C-E9A4-F19D-D6DF-066EDBCAE34F" name="INDIVIDUAL_GROUP_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 15:33:08 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -269,7 +278,7 @@
 <ind_PK_UK id="A513B35F-A98D-C7CD-DC5F-45B56BFE91CF" name="INDIVIDUAL_STOCKCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 17:29:58 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -279,7 +288,7 @@
 <ind_PK_UK id="73562820-906A-3719-901F-618A964537B4" name="INDIVIDUAL_COLLECTION_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-14 14:17:29 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

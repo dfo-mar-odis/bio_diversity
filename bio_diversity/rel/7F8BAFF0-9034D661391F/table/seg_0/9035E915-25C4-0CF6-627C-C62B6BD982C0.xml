@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 12:50:37 UTC</createdTime>
 <commentInRDBMS>Table that houses the data to cross reference various data on an animal to an event and, if pertinent, the location in the field or the facility.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <ordsAlias>table_73</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 12:53:13 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -24,7 +24,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 12:53:47 UTC</createdTime>
 <commentInRDBMS>Links to the Events table.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -40,7 +40,7 @@
 <createdTime>2020-02-05 13:35:38 UTC</createdTime>
 <comment>Needed to resolve which container a fish or group of fish are relocated to. Since an event can have multiple containers involved. And it is possible that one group is housed in mutliple containers.</comment>
 <commentInRDBMS>Links to the ContainersXRef table.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -55,7 +55,7 @@
 <createdBy>STOYELQ</createdBy>
 <createdTime>2021-02-09 15:45:02 UTC</createdTime>
 <commentInRDBMS>Flag indicating if the container in the XREF is the final location of the individuals in this event.  True if it is, False if the container is the originating container and None if the individuls did not change containers.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -67,7 +67,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 12:54:08 UTC</createdTime>
 <commentInRDBMS>Links to the Locations table.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -82,7 +82,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 13:59:51 UTC</createdTime>
 <commentInRDBMS>Links to the IndTreatments table.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -98,7 +98,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 14:00:07 UTC</createdTime>
 <commentInRDBMS>Links to the Individuals table.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -110,11 +110,11 @@
 <colAssociation fkAssociation="9F7407B3-C5CE-1337-C363-15483EC46C71" referredColumn="793F0CF8-F8CA-8EA7-E9D4-5BC7B2194379"/>
 </associations>
 </Column>
-<Column name="SPAWN_ID" id="99E07272-1ABC-C948-6D7C-DE4BCF369CA9">
+<Column name="PAIR_ID" id="99E07272-1ABC-C948-6D7C-DE4BCF369CA9">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 14:00:29 UTC</createdTime>
-<commentInRDBMS>Links to the SPawnings table.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<commentInRDBMS>Links to the Pairings  table.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -122,14 +122,14 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="C8467A03-0C3F-73A8-0617-D87A33F8F5C5" referredColumn="CA241DE8-672C-77EA-A0F9-693D8E0FD843"/>
+<colAssociation fkAssociation="909E98DE-8F01-F18E-50CE-4BF69CFEDC2D" referredColumn="8FF15618-3088-8594-48D2-45D21C31FFAA"/>
 </associations>
 </Column>
 <Column name="GROUP_ID" id="C1B88F6E-003A-9D5E-A599-C84B1E95A4EE">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 14:00:49 UTC</createdTime>
 <commentInRDBMS>Links to the Groups table.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -145,7 +145,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-12-11 16:00:23 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -157,7 +157,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-12-11 16:00:40 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -169,7 +169,7 @@
 <ind_PK_UK id="019B1B63-AB0B-7ECB-376A-61110581C849" name="ANIDETAILXREF_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 14:22:53 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -180,7 +180,7 @@
 <ind_PK_UK id="5681F39B-2D22-7D1A-CD3A-BDCED72D33AA" name="ANIDETAILXREF__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 15:07:05 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -196,7 +196,7 @@
 <ind_PK_UK id="57687745-D049-96A0-DBE0-DBCB03C20467" name="ANIDETAILXREF__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:06:41 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7C0FD58D-2232-2259-CBC7-68B70AE2388F"/>
@@ -207,7 +207,7 @@
 <ind_PK_UK id="8A4443F9-3821-B43D-8BF9-08B859C782C8" name="ANIDETAILXREF__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:06:47 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C9F45DC0-41D1-BBF9-57FD-2A0F19816B20"/>
@@ -219,7 +219,7 @@
 <ind_PK_UK id="F7BC0738-D851-B970-0E31-9D6E0B06CEF7" name="ANIDETAILXREF__IDXv2">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:42:21 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7C0FD58D-2232-2259-CBC7-68B70AE2388F"/>
@@ -228,7 +228,7 @@
 <ind_PK_UK id="C488AD19-1B98-1EAB-45DD-BF77A6BD9298" name="ANIDETAILXREF__IDXv3">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:42:28 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B06FA84E-C46A-DC07-D38A-644F11EA81C7"/>
@@ -237,7 +237,7 @@
 <ind_PK_UK id="CF80ED82-1081-A73F-0D79-293FB4282737" name="ANIDETAILXREF__IDXv4">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:42:36 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7F4D87B0-9483-C686-C7D6-E249CEE1B0B1"/>
@@ -246,7 +246,7 @@
 <ind_PK_UK id="D187B46E-1368-60C7-4048-2C1E2C52CEA6" name="ANIDETAILXREF__IDXv5">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:42:45 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E9AC23D9-58A9-845D-0053-E7D8A8CB618E"/>
@@ -255,7 +255,7 @@
 <ind_PK_UK id="0F97683F-4FCE-D34E-6A31-652AC4C097C9" name="ANIDETAILXREF__IDXv6">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:42:52 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C9F45DC0-41D1-BBF9-57FD-2A0F19816B20"/>
@@ -264,7 +264,7 @@
 <ind_PK_UK id="CFA574A4-8F20-0AE2-144E-482AA765DD4C" name="ANIDETAILXREF__IDXv7">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:43:00 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="99E07272-1ABC-C948-6D7C-DE4BCF369CA9"/>
@@ -273,7 +273,7 @@
 <ind_PK_UK id="63765026-68A6-247B-B079-AEECDCC30366" name="ANIDETAILXREF__IDXv8">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:43:07 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C1B88F6E-003A-9D5E-A599-C84B1E95A4EE"/>
@@ -282,7 +282,7 @@
 <ind_PK_UK id="9B516928-D3AC-ACA5-4FE3-06260A53B221" name="ANIDETAILXREF_EVENT_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 15:13:33 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -292,7 +292,7 @@
 <ind_PK_UK id="8960F297-D5C6-6F3D-073B-73D56A0D0C01" name="ANIDETAILXREF_LOCATION_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 15:13:57 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -302,27 +302,17 @@
 <ind_PK_UK id="9CAF063F-CF00-FF53-3605-2D42030B192D" name="ANIDETAILXREF_GROUP_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 15:17:41 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C1B88F6E-003A-9D5E-A599-C84B1E95A4EE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8404C11C-60B4-FFA1-0EB5-970378AA810F" name="ANIDETAILXREF_SPAWNING_FK">
-<createdBy>BondS</createdBy>
-<createdTime>2020-02-04 15:35:19 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="99E07272-1ABC-C948-6D7C-DE4BCF369CA9"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="C0135151-62BD-3076-E71F-790D74C959FB" name="ANIDETAILXREF_INDTREAT_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 15:54:43 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -332,7 +322,7 @@
 <ind_PK_UK id="9DFA864B-BF65-4D71-479B-3A104ADD5158" name="ANIDETAILXREF_INDIVIDUAL_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-04 15:55:12 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -342,11 +332,21 @@
 <ind_PK_UK id="6F7A05CE-E7DB-B029-CA30-E9898A250035" name="ANIDETAILXREF_CONTXREF_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-05 14:08:10 UTC</createdTime>
-<ownerDesignName>BDF</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B06FA84E-C46A-DC07-D38A-644F11EA81C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1927107-6A9E-7A17-CD79-9EECD428F4C3" name="ANIDETAILXREF_PAIRING_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-24 12:32:14 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99E07272-1ABC-C948-6D7C-DE4BCF369CA9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

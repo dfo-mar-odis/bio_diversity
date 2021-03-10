@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-06 13:11:05 UTC</createdTime>
 <commentInRDBMS>Table whichdescribes the protocols. Allows for the tracking of the history of when protocols change.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <ordsAlias>table_12</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-06 13:14:00 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,7 +25,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-06 13:14:56 UTC</createdTime>
 <commentInRDBMS>Links to the Programs table to describe the program which the protocol is a part of.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -40,7 +40,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-06 14:07:44 UTC</createdTime>
 <commentInRDBMS>Foreign key which links to the ProtoCodes table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -55,7 +55,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 13:33:28 UTC</createdTime>
 <commentInRDBMS>Links to the ProtoFile table which houses documents to more fully describe the protocol in question, if required.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -66,11 +66,24 @@
 <colAssociation fkAssociation="FB685F28-F87F-607F-5B28-C4C19E5AC51A" referredColumn="8275438A-493F-5142-F54C-6478D3B5D2B8"/>
 </associations>
 </Column>
+<Column name="FAC_ID" id="649075F2-7C38-1BB7-AFA0-EDFD290D2F6B">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-12 12:21:19 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A98EA1AA-D289-F220-4BB5-50D5BAF6096C" referredColumn="1F95A9AC-147C-5382-C09C-B1CAC69EB4CC"/>
+</associations>
+</Column>
 <Column name="EVT_ID" id="8F6EAD75-ACCC-83C3-1537-2A3CDA218CBD">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-12-11 15:54:47 UTC</createdTime>
 <commentInRDBMS>Links to the EventCode table which describe the type of event or activity which the protocol applies to, if required.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -85,7 +98,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-06 13:16:46 UTC</createdTime>
 <commentInRDBMS>Description of the protocol.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -97,7 +110,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-06 13:15:23 UTC</createdTime>
 <commentInRDBMS>Start date for the protocol.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -108,7 +121,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-06 13:15:39 UTC</createdTime>
 <commentInRDBMS>Date that the protocol was deprecated.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -120,7 +133,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-10 11:33:50 UTC</createdTime>
 <commentInRDBMS>Boolean, Y or N, that indicates whether this record is still valid,  used to filter in the application and for reporting purposes.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -132,7 +145,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 14:50:46 UTC</createdTime>
 <commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -145,7 +158,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 14:48:20 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -157,7 +170,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 17:41:44 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -169,7 +182,7 @@
 <ind_PK_UK id="448CEB4E-A39A-02C0-1154-B885E809B3CB" name="PROTOCOL_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-06 13:14:00 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -180,7 +193,7 @@
 <ind_PK_UK id="C9921938-2F88-DA51-6CAF-90AA7262B972" name="PROTOCOL__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 12:43:34 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -192,7 +205,7 @@
 <ind_PK_UK id="F0F7DA42-2639-683D-347F-9E307AA22277" name="PROTOCOL__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 15:31:36 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="39A00FCF-AEDA-E884-63C0-6C2689CF64A0"/>
@@ -202,7 +215,7 @@
 <ind_PK_UK id="9C4FDFE0-78FA-D4FA-7698-377B93D86796" name="PROTOCOL__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 15:31:36 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B397DFBB-2DCD-8237-6DD5-1F59A681FB3B"/>
@@ -211,7 +224,7 @@
 <ind_PK_UK id="8C2A6E57-5A64-5993-379E-DD19E429D243" name="PROTOCOL__IDXv2">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:14:11 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="39A00FCF-AEDA-E884-63C0-6C2689CF64A0"/>
@@ -220,7 +233,7 @@
 <ind_PK_UK id="A2E7A3A6-9909-C421-C42D-F84E1017D9F9" name="PROTOCOL__IDXv3">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 18:14:11 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D38B16F2-0D48-2ABC-2174-05E301EA657B"/>
@@ -229,7 +242,7 @@
 <ind_PK_UK id="BFBF438D-8E8E-5605-A5F8-57A8A112EF28" name="PROTOCOL_PROGRAM_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-06 13:22:24 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -239,7 +252,7 @@
 <ind_PK_UK id="3660A04D-4156-F273-C7FC-D9EBA655E80F" name="PROTOCOL_PROTOCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-06 14:08:00 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -249,7 +262,7 @@
 <ind_PK_UK id="4B29483D-7171-D7F9-C48C-1AE9838D4F12" name="PROTOCOL_PROTOFILE_FK">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 13:35:05 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -259,11 +272,21 @@
 <ind_PK_UK id="8B410FE6-D0C3-23F6-F1B3-F1027F8C4297" name="PROTOCOL_EVENTCODE_FK">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-12-11 15:55:34 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8F6EAD75-ACCC-83C3-1537-2A3CDA218CBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1DE4270-05F8-85D0-C467-BF7C5CF0947F" name="PROTOCOL_FACILITYCODE_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-12 12:33:12 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="649075F2-7C38-1BB7-AFA0-EDFD290D2F6B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

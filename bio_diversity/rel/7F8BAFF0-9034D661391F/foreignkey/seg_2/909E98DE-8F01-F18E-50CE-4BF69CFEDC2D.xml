@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="909E98DE-8F01-F18E-50CE-4BF69CFEDC2D" containerWithKeyObject="9035E915-25C4-0CF6-627C-C62B6BD982C0" localFKIndex="D1927107-6A9E-7A17-CD79-9EECD428F4C3" name="ANIDETAILXREF_PAIRING_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-24 12:32:14 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<referredTableLongName>PAIRING</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>01F033E1-5B05-9356-761E-8DDABB5576CD</referredTableID>
+<keyObject>2470A563-429B-A151-E4A2-BADD4479866C</keyObject>
+<referredKeyID>2470A563-429B-A151-E4A2-BADD4479866C</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>PAIR_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

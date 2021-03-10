@@ -43,11 +43,25 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="FCEFC413-2A47-5B31-E55C-1845631F1D58" referredColumn="670A36C2-7A74-5D01-0101-4B2B89BC8E20"/>
+</associations>
+</Column>
+<Column name="FROM_GRP_ID" id="1CF3795D-D43B-2425-6115-7FBA8C84B26C">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-25 12:25:31 UTC</createdTime>
+<commentInRDBMS>Links to the Group table to link to the origin group.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FC0DEAB-7C1B-7EFF-6C97-5441702BE06D" referredColumn="9CD7E9E3-F96F-8F31-C71C-134C796A88FC"/>
 </associations>
 </Column>
 <Column name="VAL" id="FB2FCC90-7B4F-3D14-B7E9-DF41D71CE656">
@@ -176,6 +190,7 @@
 <colUsage columnID="2751FF77-FBAA-766D-5E0F-D510462740A2"/>
 <colUsage columnID="1CA80D75-D00F-8CAE-DB79-22D2A6122843"/>
 <colUsage columnID="02997A38-A6C2-2BD7-DE7C-6DC610689A7D"/>
+<colUsage columnID="1CF3795D-D43B-2425-6115-7FBA8C84B26C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="9D8DBD63-FAFC-AF99-F8F6-163B25D46F35" name="GROUPDET__IDX">
@@ -272,6 +287,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2751FF77-FBAA-766D-5E0F-D510462740A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10E1CC2C-13DF-6F7F-64B6-3B9EA0A2DE02" name="GROUPDET_GROUP_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-25 12:26:06 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CF3795D-D43B-2425-6115-7FBA8C84B26C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

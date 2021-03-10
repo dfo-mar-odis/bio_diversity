@@ -3,7 +3,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 18:02:38 UTC</createdTime>
 <commentInRDBMS>Table that houses information on treatments performed on a container of animals. For example antifungal agent added to a tank.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <ordsAlias>table_54</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 18:03:13 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,7 +25,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-05 14:48:55 UTC</createdTime>
 <commentInRDBMS>Links to the ContainersXRef table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -39,7 +39,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 18:03:46 UTC</createdTime>
 <commentInRDBMS>Links to the EnvTreatCodes for the description of the type of treatment.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -54,7 +54,8 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 18:22:49 UTC</createdTime>
 <commentInRDBMS>Lot number of the product used in the treatment.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -66,7 +67,7 @@
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 18:04:49 UTC</createdTime>
 <commentInRDBMS>Amount of the product used.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -75,16 +76,29 @@
 <ownDataTypeParameters>,9,3</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CONCENTRATION" id="B62AE5A7-B017-CDB7-861D-C26DBBA1601E">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-01 13:23:54 UTC</createdTime>
+<commentInRDBMS>Concentration of treatment, expressed as a decimal ratio.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,8,7</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="UNIT_ID" id="9E22CAB1-41F4-3689-FAF9-698D9DF3934C">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 18:23:42 UTC</createdTime>
 <commentInRDBMS>Links to the UnitCodes table for the unit of measure of the treatment.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="B1A737BA-B689-2A72-1A76-366932B52E95" referredColumn="E8F8814A-F724-6EEF-8ADC-DDA1D28B7EC0"/>
@@ -94,7 +108,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-02-27 11:19:50 UTC</createdTime>
 <commentInRDBMS>The duration, in minutes, of the treatment.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -106,7 +120,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 15:01:52 UTC</createdTime>
 <commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -119,7 +133,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:10:34 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -131,7 +145,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-05 18:10:52 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -143,7 +157,7 @@
 <ind_PK_UK id="A63E3BB4-FE03-3354-F637-C246F327A751" name="ENVTREATMENT_PK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 18:03:13 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -154,7 +168,7 @@
 <ind_PK_UK id="31F47BB6-1EB1-C4AB-1C3C-EA90F19C5CFB" name="ENVTREATMENT__UN">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-23 14:09:46 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -165,7 +179,7 @@
 <ind_PK_UK id="4FD9C4FE-80C1-BAF8-5F06-37C6E8E5BCE8" name="ENVTREATMENT__IDX">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:26:26 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8261EE87-4A6C-3173-D168-59CBFC081FA9"/>
@@ -175,7 +189,7 @@
 <ind_PK_UK id="D863CD35-04A6-42AD-4E89-D9E4A9F1B0E6" name="ENVTREATMENT__IDXv1">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:26:32 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DFF93C9C-0E67-65F0-9F3D-C303D9875DB3"/>
@@ -184,7 +198,7 @@
 <ind_PK_UK id="C2B7C266-9EE3-F49E-C007-C6D074CEA69D" name="ENVTREATMENT__IDXv2">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-10 17:26:36 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9E22CAB1-41F4-3689-FAF9-698D9DF3934C"/>
@@ -193,7 +207,7 @@
 <ind_PK_UK id="00609BBA-A537-0F08-C1D7-DEAF0F1B19AB" name="ENVTREATMENT__IDXv3">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:55:49 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8261EE87-4A6C-3173-D168-59CBFC081FA9"/>
@@ -202,7 +216,7 @@
 <ind_PK_UK id="17906824-8A9A-4E18-B106-13A581D9721D" name="ENVTREATMENT__IDXv4">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-13 17:55:49 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0852ED91-1AC9-C7B1-EFF2-0A4CB95B63F0"/>
@@ -211,7 +225,7 @@
 <ind_PK_UK id="CA06E25F-318E-3FB4-2E80-0013A474095F" name="TREATMENT_ENVTREATCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 18:18:00 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -221,7 +235,7 @@
 <ind_PK_UK id="1024ADA0-D772-360B-9611-8B4FDB05E93B" name="TREATMENT_UNITCODE_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 18:24:06 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -231,7 +245,7 @@
 <ind_PK_UK id="9621BB71-087E-F34C-4409-BB4FCFFB7F64" name="ENVTREATMENT_CONTXREF_FK">
 <createdBy>BondS</createdBy>
 <createdTime>2020-02-05 14:49:49 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

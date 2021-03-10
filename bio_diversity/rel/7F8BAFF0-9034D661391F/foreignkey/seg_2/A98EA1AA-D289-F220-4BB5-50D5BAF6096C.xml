@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="A98EA1AA-D289-F220-4BB5-50D5BAF6096C" containerWithKeyObject="3B9F19D9-95A5-DD34-DDDE-D767B640F94E" localFKIndex="D1DE4270-05F8-85D0-C467-BF7C5CF0947F" name="PROTOCOL_FACILITYCODE_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-02-12 12:33:12 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<referredTableLongName>FACILITYCODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>583F9E3E-72BF-5365-2837-5E40B3CC589D</referredTableID>
+<keyObject>E661E4D3-0DE0-D542-6D73-BC44B8A1C807</keyObject>
+<referredKeyID>E661E4D3-0DE0-D542-6D73-BC44B8A1C807</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FAC_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
