@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="459DC723-F230-05CC-780D-04A3F7FE8A78" containerWithKeyObject="0B4CC266-DBA5-9323-ED31-C938256550B8" localFKIndex="CDE03304-D413-52C4-4D91-552CA3A70572" name="MATINGPLAN_EVENTFILECODE_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:29:10 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<referredTableLongName>EVENTFILECODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4A206B3C-D636-EFDE-1BA1-97B37AC05A6F</referredTableID>
+<keyObject>377A93B9-EF01-8B3E-2041-F0AA45FA37C2</keyObject>
+<referredKeyID>377A93B9-EF01-8B3E-2041-F0AA45FA37C2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>EVT_FILE_CODE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

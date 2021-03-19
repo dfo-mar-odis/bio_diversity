@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="D1097151-5981-1B91-F388-5C5CB6EF7E6B" containerWithKeyObject="14D71919-F769-7852-3908-6AD9D9056F72" localFKIndex="D4C62DAC-9499-583E-30F1-0EDF63AED676" name="TRAY_TROUGH_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-10 18:58:17 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<referredTableLongName>TROUGH</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B547E829-0581-1852-3EE8-38DFD64CE56B</referredTableID>
+<keyObject>9F3C8E0E-4172-E4F0-D218-FFC1596DBF12</keyObject>
+<referredKeyID>9F3C8E0E-4172-E4F0-D218-FFC1596DBF12</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TROUGH_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

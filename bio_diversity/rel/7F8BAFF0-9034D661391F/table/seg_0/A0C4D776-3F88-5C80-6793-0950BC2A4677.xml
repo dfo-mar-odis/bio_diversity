@@ -21,7 +21,7 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FAC_ID" id="509730F0-603C-6F7B-4120-99C0D58F3DDC">
+<Column name="HEATH_UNIT_ID" id="509730F0-603C-6F7B-4120-99C0D58F3DDC">
 <createdBy>STOYELQ</createdBy>
 <createdTime>2021-02-10 15:48:21 UTC</createdTime>
 <commentInRDBMS>Links to the facility codes table</commentInRDBMS>
@@ -32,7 +32,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="8EFFED97-4A6C-1426-3589-BA09FB0E5414" referredColumn="1F95A9AC-147C-5382-C09C-B1CAC69EB4CC"/>
+<colAssociation fkAssociation="57132573-A38E-FF3F-AA02-E28DF1C974ED" referredColumn="7C9BA3D5-16B0-A3E3-472F-A3E6992E7CAC"/>
 </associations>
 </Column>
 <Column name="DRAWER_SHORT" id="D839A70A-8A2B-E0D9-897E-C93BDE3C676D">
@@ -103,6 +103,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D839A70A-8A2B-E0D9-897E-C93BDE3C676D"/>
+<colUsage columnID="509730F0-603C-6F7B-4120-99C0D58F3DDC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="4324BEBB-38E4-A01D-8D60-5550DEDED701" name="DRAWER__IDX">
@@ -114,9 +115,9 @@
 <colUsage columnID="D839A70A-8A2B-E0D9-897E-C93BDE3C676D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F9836A47-B69A-F40E-EDEB-21264EA18607" name="DRAWER_FACILITYCODE_FK">
+<ind_PK_UK id="2911C06F-E50E-FD14-7E2A-B8FBEF08312D" name="DRAWER_HEATHUNIT_FK">
 <createdBy>STOYELQ</createdBy>
-<createdTime>2021-02-10 15:48:21 UTC</createdTime>
+<createdTime>2021-03-17 12:21:13 UTC</createdTime>
 <ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>

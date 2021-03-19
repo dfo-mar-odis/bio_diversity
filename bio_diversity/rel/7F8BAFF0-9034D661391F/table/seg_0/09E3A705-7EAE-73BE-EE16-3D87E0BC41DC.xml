@@ -21,10 +21,10 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FAC_ID" id="972B3A06-9A60-B6CC-4C1A-F02037F3D45D">
+<Column name="DRAW_ID" id="972B3A06-9A60-B6CC-4C1A-F02037F3D45D">
 <createdBy>STOYELQ</createdBy>
 <createdTime>2021-02-10 15:52:59 UTC</createdTime>
-<commentInRDBMS>Links to the facility codes table</commentInRDBMS>
+<commentInRDBMS>Links to the drawer the cup is placed in.</commentInRDBMS>
 <ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="E4CD682C-B923-BB2E-00F4-B2ED8AA8E274" referredColumn="1F95A9AC-147C-5382-C09C-B1CAC69EB4CC"/>
+<colAssociation fkAssociation="3CAA102D-048C-785C-5569-9958B8A0EF41" referredColumn="9A8A7F72-85E6-1062-35DA-FDBF5AE10482"/>
 </associations>
 </Column>
 <Column name="CUP_SHORT" id="E0398B07-2F2F-D6EE-8820-A4247FD354FF">
@@ -58,6 +58,28 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>35 CHAR</dataTypeSize>
 <ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="2A2FF422-D66E-B591-E694-443CB3FC7176">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-17 12:18:44 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="0FB2BFA6-3137-6EBB-0BB6-66418DE17B55">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-17 12:18:44 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CREATED_BY" id="18AE8EDA-D46D-1E65-28A1-1C6CF9AB03ED">
@@ -104,6 +126,8 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E0398B07-2F2F-D6EE-8820-A4247FD354FF"/>
+<colUsage columnID="972B3A06-9A60-B6CC-4C1A-F02037F3D45D"/>
+<colUsage columnID="2A2FF422-D66E-B591-E694-443CB3FC7176"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="A374DB7B-9384-2562-6146-BC33FB2DB7C9" name="CUP__IDX">
@@ -115,9 +139,9 @@
 <colUsage columnID="E0398B07-2F2F-D6EE-8820-A4247FD354FF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2F650AD9-C816-94D7-4D9A-0BFECD428C80" name="CUP_FACILITYCODE_FK">
+<ind_PK_UK id="62E68E28-C155-EB91-79AB-95244E339985" name="CUP_DRAWER_FK">
 <createdBy>STOYELQ</createdBy>
-<createdTime>2021-02-10 15:52:59 UTC</createdTime>
+<createdTime>2021-03-17 12:20:30 UTC</createdTime>
 <ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>

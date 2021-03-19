@@ -21,10 +21,10 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FAC_ID" id="6F8CC1DD-E503-F1E7-6C85-92AFB8BFB406">
+<Column name="TROUGH_ID" id="C42B3A1B-A8A2-2001-4403-DB2784136FD5">
 <createdBy>STOYELQ</createdBy>
-<createdTime>2021-02-10 15:51:32 UTC</createdTime>
-<commentInRDBMS>Links to the facility codes table</commentInRDBMS>
+<createdTime>2021-03-10 18:58:17 UTC</createdTime>
+<commentInRDBMS>Trough in which tray is placed.</commentInRDBMS>
 <ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="0D893F67-748B-B245-3C8A-85D317D86DBF" referredColumn="1F95A9AC-147C-5382-C09C-B1CAC69EB4CC"/>
+<colAssociation fkAssociation="D1097151-5981-1B91-F388-5C5CB6EF7E6B" referredColumn="9F78192C-7198-A6FE-0DDF-0598D81F8608"/>
 </associations>
 </Column>
 <Column name="TRAY_SHORT" id="99F15207-A993-5104-DDCA-DD26AE2DC017">
@@ -57,6 +57,29 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>35 CHAR</dataTypeSize>
 <ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRAY_START" id="76E94A54-F5BB-7EAA-CA1F-258501C5936E">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-10 18:58:17 UTC</createdTime>
+<commentInRDBMS>FIrst day a tray is placed in a trough, should align with spawning date.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRAY_END" id="031744DA-737C-16AD-B8B7-FDE7E9CF2329">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-10 18:58:17 UTC</createdTime>
+<commentInRDBMS>Last day a tray is associated with a trough.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CREATED_BY" id="6BE48F39-8E38-AEB6-89C8-72B5BC12E22F">
@@ -103,6 +126,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="99F15207-A993-5104-DDCA-DD26AE2DC017"/>
+<colUsage columnID="C42B3A1B-A8A2-2001-4403-DB2784136FD5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="215B9FCC-2917-9B93-D304-703C0FD5B355" name="TRAY__IDX">
@@ -114,14 +138,14 @@
 <colUsage columnID="99F15207-A993-5104-DDCA-DD26AE2DC017"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A387CAE5-14FA-029C-7715-C6505F6B0510" name="TRAY_FACILITYCODE_FK">
+<ind_PK_UK id="D4C62DAC-9499-583E-30F1-0EDF63AED676" name="TRAY_TROUGH_FK">
 <createdBy>STOYELQ</createdBy>
-<createdTime>2021-02-10 15:51:32 UTC</createdTime>
+<createdTime>2021-03-10 18:58:17 UTC</createdTime>
 <ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6F8CC1DD-E503-F1E7-6C85-92AFB8BFB406"/>
+<colUsage columnID="C42B3A1B-A8A2-2001-4403-DB2784136FD5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

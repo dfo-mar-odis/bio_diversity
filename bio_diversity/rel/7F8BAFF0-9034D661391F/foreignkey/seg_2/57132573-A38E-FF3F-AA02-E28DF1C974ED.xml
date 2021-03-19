@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="57132573-A38E-FF3F-AA02-E28DF1C974ED" containerWithKeyObject="A0C4D776-3F88-5C80-6793-0950BC2A4677" localFKIndex="2911C06F-E50E-FD14-7E2A-B8FBEF08312D" name="DRAWER_HEATHUNIT_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-17 12:21:13 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<referredTableLongName>HEATHUNIT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E11CFE41-8247-530D-E955-CE34A34A8AE0</referredTableID>
+<keyObject>39894A78-D584-659A-8432-796D46E68A7A</keyObject>
+<referredKeyID>39894A78-D584-659A-8432-796D46E68A7A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>HEATH_UNIT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

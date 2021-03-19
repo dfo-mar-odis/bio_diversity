@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="3CAA102D-048C-785C-5569-9958B8A0EF41" containerWithKeyObject="09E3A705-7EAE-73BE-EE16-3D87E0BC41DC" localFKIndex="62E68E28-C155-EB91-79AB-95244E339985" name="CUP_DRAWER_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-17 12:20:30 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<referredTableLongName>DRAWER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A0C4D776-3F88-5C80-6793-0950BC2A4677</referredTableID>
+<keyObject>2F24209A-8C18-F9B1-24D9-5B40998E723A</keyObject>
+<referredKeyID>2F24209A-8C18-F9B1-24D9-5B40998E723A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DRAWER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

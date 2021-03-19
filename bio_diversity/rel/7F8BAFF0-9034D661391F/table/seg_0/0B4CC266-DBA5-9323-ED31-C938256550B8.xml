@@ -1,19 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B4CC266-DBA5-9323-ED31-C938256550B8" name="MATINGPLAN">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B4CC266-DBA5-9323-ED31-C938256550B8" name="EVENTFILE">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-12 18:10:48 UTC</createdTime>
 <commentInRDBMS>Table that houses the completed Mating Plan for the spawning.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <ordsAlias>table_75</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="MATINGPLAN_ID" id="EE8F7EE9-D0FE-5AC5-0FC7-3A35BAAF2C13">
+<Column name="EVT_FILE_ID" id="EE8F7EE9-D0FE-5AC5-0FC7-3A35BAAF2C13">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-12 18:11:22 UTC</createdTime>
 <commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -24,7 +24,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-12 18:13:28 UTC</createdTime>
 <commentInRDBMS>Links to the EVent table for the spawning event.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -34,11 +34,25 @@
 <colAssociation fkAssociation="B3C5FF30-B4D9-1EC7-3F77-B3EEFBB442AC" referredColumn="14A37245-A5F9-DDA5-5850-BE9A795B7237"/>
 </associations>
 </Column>
-<Column name="MATINGPLAN" id="F13C42A7-5230-318C-9B2E-5DFF2EB0F079">
+<Column name="EVT_FILE_CODE_ID" id="E5C0A8A9-4742-15DD-57C9-F8797F237786">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:26:30 UTC</createdTime>
+<commentInRDBMS>Links to the Event File Code table to describe the type of document recorded to the event.  </commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="459DC723-F230-05CC-780D-04A3F7FE8A78" referredColumn="1E6B2265-5E2E-EB46-AA61-CE0BECA1DFA5"/>
+</associations>
+</Column>
+<Column name="EVTFILE" id="F13C42A7-5230-318C-9B2E-5DFF2EB0F079">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-12 18:12:27 UTC</createdTime>
-<commentInRDBMS>The completed Mating Plan spreadsheet used during the spawning activity.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<commentInRDBMS>The document related to the event.  </commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT029</logicalDatatype>
@@ -49,7 +63,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-23 17:18:43 UTC</createdTime>
 <commentInRDBMS>Stock that the mating plan is for.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -61,7 +75,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-12 18:18:16 UTC</createdTime>
 <commentInRDBMS>Comments regarding the data in this record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -74,7 +88,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-12 18:18:38 UTC</createdTime>
 <commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -86,7 +100,7 @@
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-12 18:18:53 UTC</createdTime>
 <commentInRDBMS>Date that the record was input.</commentInRDBMS>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -95,10 +109,10 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="9C9FB52C-4CBA-BFA3-44AF-2AED928C3DB9" name="MATINGPLAN_PK">
+<ind_PK_UK id="9C9FB52C-4CBA-BFA3-44AF-2AED928C3DB9" name="EVENTFILE_PK">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-12 18:11:22 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -109,7 +123,7 @@
 <ind_PK_UK id="D5FA5D27-FB41-B919-9C5C-36AB15F6E748" name="MATINGPLAN__UN">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-23 17:14:41 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -121,7 +135,7 @@
 <ind_PK_UK id="4620D9B2-70CA-97B3-9F5A-83AA4CED3C11" name="MATINGPLAN__IDX">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-23 17:14:31 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="80BB307C-7452-939C-808B-60D4D8A9F733"/>
@@ -130,11 +144,21 @@
 <ind_PK_UK id="40CE86BB-F481-E919-2EB5-1ECD60C2173B" name="MATINGPLAN_EVENT_FK">
 <createdBy>BondSA</createdBy>
 <createdTime>2020-03-12 18:16:02 UTC</createdTime>
-<ownerDesignName>BDF_Dec_2020</ownerDesignName>
+<ownerDesignName>bio_diversity</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="80BB307C-7452-939C-808B-60D4D8A9F733"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CDE03304-D413-52C4-4D91-552CA3A70572" name="MATINGPLAN_EVENTFILECODE_FK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:29:10 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5C0A8A9-4742-15DD-57C9-F8797F237786"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

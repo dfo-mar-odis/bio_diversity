@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4A206B3C-D636-EFDE-1BA1-97B37AC05A6F" name="EVENTFILECODE">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:24:15 UTC</createdTime>
+<commentInRDBMS>Table that describes the different types of events which may take place. Possible examples are spawning, field sampling, or counting of eggs.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EVT_FILE_CODE_ID" id="1E6B2265-5E2E-EB46-AA61-CE0BECA1DFA5">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:24:15 UTC</createdTime>
+<commentInRDBMS>System generated primary key for the table.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVT_FILE_SHORT" id="03AA07A1-94D5-951C-B341-336D5C33C163">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:24:15 UTC</createdTime>
+<commentInRDBMS>Unigue, short description.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVT_FILE_DESC" id="E70E3D47-3445-D4A0-88AB-FBA351AFBD18">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:24:15 UTC</createdTime>
+<commentInRDBMS>Long description of the type of event file.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="70C03658-8B3C-4A5F-BF93-6A8A5B7645C9">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:24:15 UTC</createdTime>
+<commentInRDBMS>The user name of the account which created the record.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="F70687BF-B711-D484-4C86-CBB0B220EEFD">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:24:15 UTC</createdTime>
+<commentInRDBMS>Date that the record was input.</commentInRDBMS>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="377A93B9-EF01-8B3E-2041-F0AA45FA37C2" name="EVENTFILECODE_PK">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:24:15 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E6B2265-5E2E-EB46-AA61-CE0BECA1DFA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="226E8F2D-61CD-D21B-9C71-1532D7164369" name="EVENTCODEv1_EVT_SHORT_UN">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:24:15 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03AA07A1-94D5-951C-B341-336D5C33C163"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADF32F7E-0385-DDD8-80F8-C39C7AD27911" name="EVENTCODEv1_EVT_SHORT_IDX">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-16 12:24:15 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03AA07A1-94D5-951C-B341-336D5C33C163"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
