@@ -34,6 +34,16 @@
 <colAssociation fkAssociation="56B784DD-07FC-E544-E438-93CC2B2BFFC1" referredColumn="A1F3E832-DFBB-41FA-7C10-BA86BD0011E3"/>
 </associations>
 </Column>
+<Column name="CROSS" id="07473067-9242-2653-61F2-49E43AEA0C99">
+<createdBy>STOYELQ</createdBy>
+<createdTime>2021-03-19 12:17:40 UTC</createdTime>
+<ownerDesignName>bio_diversity</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="PAIR_START" id="1C50D609-D41C-1ED5-8496-E496F1B64469">
 <createdBy>BondS</createdBy>
 <createdTime>2020-01-13 13:49:54 UTC</createdTime>
